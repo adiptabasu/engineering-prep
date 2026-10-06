@@ -43,6 +43,12 @@ Each problem focuses on understanding:
 
 Where applicable, implementations include links to the original problem for reference.
 
+Detailed DSA progress and section-level notes are maintained in [`DSA/README.md`](DSA/README.md).
+
+The completed Arrays & Hashing revision guide is available in [`DSA/01-Arrays/README.md`](DSA/01-Arrays/README.md).
+
+All completed LeetCode problem links are collected in [`DSA/LeetCode.md`](DSA/LeetCode.md).
+
 ---
 
 ### System Design
@@ -166,13 +172,17 @@ For algorithmic problems, the general workflow is:
 ```text
 Understand the problem
         ↓
+Attempt the problem independently
+        ↓
 Develop a brute-force solution
         ↓
 Identify the bottleneck
         ↓
-Find the underlying pattern
+Look for useful input properties
         ↓
-Derive an optimized solution
+Derive the underlying pattern
+        ↓
+Derive the optimized solution
         ↓
 Analyze complexity
         ↓
@@ -180,8 +190,25 @@ Implement
         ↓
 Test
         ↓
+Commit & push
+        ↓
 Explore variations
+        ↓
+Re-solve later
 ```
+
+A particular emphasis is placed on **pattern recognition**.
+
+The goal is not simply to remember that a particular problem uses a HashMap, Sliding Window, Prefix Sum, Stack, or Dynamic Programming.
+
+Instead, the goal is to recognize **why** a particular technique is appropriate based on:
+
+- The constraints
+- The structure of the input
+- The operations required
+- Mathematical relationships
+- State that needs to be maintained
+- Invariants that remain true during the algorithm
 
 The same principle is applied to system design and software engineering topics:
 
@@ -212,7 +239,7 @@ Progress is tracked by topic rather than by simply counting problems.
 ### Data Structures & Algorithms
 
 - 🟢 Complexity Analysis
-- 🟢 Arrays & Hashing — In Progress
+- 🟢 Arrays & Hashing — Complete
 - ⚪ Linked Lists
 - ⚪ Stacks & Queues
 - ⚪ Binary Search
@@ -226,13 +253,35 @@ Progress is tracked by topic rather than by simply counting problems.
 - ⚪ Bit Manipulation
 - ⚪ Advanced Topics
 
-The progress indicators represent the current state of the learning journey and may change as topics are revisited.
+### Arrays & Hashing
+
+**24 problems implemented and pushed.**
+
+The section currently covers:
+
+- HashMap / HashSet
+- Frequency counting
+- Two Pointers
+- Sliding Window
+- Prefix Sum
+- Prefix Remainders
+- Prefix / Suffix techniques
+- Heap / Priority Queue
+- Kadane's Algorithm
+- Dynamic Programming
+- Stack-based reasoning
+
+The problems are documented individually in the Java source files and summarized in the [Arrays & Hashing revision guide](DSA/01-Arrays/README.md).
+
+The progress indicators represent the current state of the learning journey and may change as topics are revisited at greater depth.
 
 ---
 
 ## 🔗 Problem References
 
 For problems originating from external platforms, the implementation includes a reference link near the beginning of the source file.
+
+A central index of completed LeetCode problems is also maintained in [`DSA/LeetCode.md`](DSA/LeetCode.md).
 
 This keeps the repository useful as a long-term reference while making it easy to revisit the original problem and its constraints.
 
@@ -245,10 +294,13 @@ This repository is primarily a **personal learning and engineering knowledge bas
 It is intentionally built incrementally:
 
 - Learn a concept
+- Attempt it independently
 - Implement it
 - Understand the trade-offs
 - Document the important ideas
+- Commit and push the work
 - Revisit difficult areas
+- Re-solve previously completed problems
 - Build upon previous knowledge
 
 The repository will evolve as new concepts are learned and existing ones are revisited at greater depth.

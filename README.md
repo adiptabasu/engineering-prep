@@ -16,7 +16,7 @@ Systematic study and implementation of common data structures, algorithms, probl
 DSA/
 ├── 01-Arrays/
 ├── 02-LinkedLists/
-└── 03-Design/  (design problems; separate from the numbered DSA topics)
+└── DSN-Design/  (design problems; separate from the numbered DSA topics)
 ```
 
 Each problem focuses on understanding:
@@ -35,7 +35,7 @@ Where applicable, implementations include links to the original problem for refe
 
 Detailed DSA progress and section-level notes are maintained in [`DSA/README.md`](DSA/README.md).
 
-The numbered DSA roadmap is tracked separately from design problems: **03 — Stack & Queue** is the next DSA topic, while `DSA/03-Design/` holds design problems such as LRU Cache.
+The numbered DSA roadmap is tracked separately from design problems: **03 — Stack & Queue** is the next DSA topic, while `DSA/DSN-Design/` holds design problems such as LRU Cache.
 
 Topic revision guides are available in [`DSA/01-Arrays/README.md`](DSA/01-Arrays/README.md) and [`DSA/02-LinkedLists/README.md`](DSA/02-LinkedLists/README.md).
 
@@ -269,7 +269,7 @@ The problems are documented individually in the Java source files and summarized
 
 **15 problems implemented and pushed.** The section covers traversal, reversal, fast and slow pointers, dummy nodes, cycle detection, intersection, deep copying, list rearrangement, and grouped operations. The [Linked Lists revision guide](DSA/02-LinkedLists/README.md) records the problem set and the key reasoning points to revisit.
 
-The LRU Cache implementation is in [`DSA/03-Design/LRUCache.java`](DSA/03-Design/LRUCache.java) and is indexed as a design problem in [`DSA/LeetCode.md`](DSA/LeetCode.md).
+The LRU Cache implementation is in [`DSA/DSN-Design/LRUCache.java`](DSA/DSN-Design/LRUCache.java) and is indexed as a design problem in [`DSA/LeetCode.md`](DSA/LeetCode.md).
 
 The progress indicators represent the current state of the learning journey and may change as topics are revisited at greater depth.
 

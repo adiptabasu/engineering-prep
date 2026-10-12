@@ -128,7 +128,7 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 1. **LRU Cache**
    https://leetcode.com/problems/lru-cache/
 
-   Implementation: [`03-Design/LRUCache.java`](03-Design/LRUCache.java)
+   Implementation: [`DSN-Design/LRUCache.java`](DSN-Design/LRUCache.java)
 
 ## Re-solving Order
 

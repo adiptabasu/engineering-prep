@@ -6,23 +6,23 @@ This section builds precise pointer reasoning through common singly linked list 
 
 ## Problem List
 
-| # | Problem | Main pattern to recall |
-|---:|---|---|
-| 1 | Reverse Linked List | Three pointers; preserve the successor before rewiring |
-| 2 | Merge Two Sorted Lists | Dummy head and advancing the smaller node |
-| 3 | Linked List Cycle | Fast and slow pointers |
-| 4 | Remove Nth Node From End of List | Dummy node and a fixed fast/slow gap |
-| 5 | Middle of the Linked List | Fast and slow pointers; choose the second middle |
-| 6 | Palindrome Linked List | Find midpoint, reverse second half, compare |
-| 7 | Reorder List | Split, reverse, and weave two halves |
-| 8 | Copy List with Random Pointer | Hash map or interleaving copies; preserve node identity |
-| 9 | Add Two Numbers | Digit-by-digit traversal with carry |
-| 10 | Intersection of Two Linked Lists | Compare node references; pointer switching aligns distances |
-| 11 | Reverse Linked List II | Dummy node and reconnect a sublist |
-| 12 | Swap Nodes in Pairs | Rewire adjacent nodes through a predecessor |
-| 13 | Reverse Nodes in k-Group | Verify a complete group, reverse, then reconnect |
-| 14 | Rotate List | Measure length, reduce `k`, close and break the cycle |
-| 15 | Partition List | Two stable chains with dummy heads and tail pointers |
+| # | Problem | Main pattern to recall | Solution |
+|---:|---|---|---|
+| 1 | Reverse Linked List | Three pointers; preserve the successor before rewiring | [View](./ReverseLinkedList.java) |
+| 2 | Merge Two Sorted Lists | Dummy head and advancing the smaller node | [View](./MergeTwoSortedLists.java) |
+| 3 | Linked List Cycle | Fast and slow pointers | [View](./LinkedListCycle.java) |
+| 4 | Remove Nth Node From End of List | Dummy node and a fixed fast/slow gap | [View](./RemoveNthNodeFromEnd.java) |
+| 5 | Middle of the Linked List | Fast and slow pointers; choose the second middle | [View](./MiddleOfTheLinkedList.java) |
+| 6 | Palindrome Linked List | Find midpoint, reverse second half, compare | [View](./PalindromeLinkedList.java) |
+| 7 | Reorder List | Split, reverse, and weave two halves | [View](./ReorderList.java) |
+| 8 | Copy List with Random Pointer | Hash map or interleaving copies; preserve node identity | [View](./CopyListWithRandomPointer.java) |
+| 9 | Add Two Numbers | Digit-by-digit traversal with carry | [View](./AddTwoNumbers.java) |
+| 10 | Intersection of Two Linked Lists | Compare node references; pointer switching aligns distances | [View](./IntersectionOfTwoLinkedLists.java) |
+| 11 | Reverse Linked List II | Dummy node and reconnect a sublist | [View](./ReverseLinkedListII.java) |
+| 12 | Swap Nodes in Pairs | Rewire adjacent nodes through a predecessor | [View](./SwapNodesInPairs.java) |
+| 13 | Reverse Nodes in k-Group | Verify a complete group, reverse, then reconnect | [View](./ReverseNodesInKGroup.java) |
+| 14 | Rotate List | Measure length, reduce `k`, close and break the cycle | [View](./RotateList.java) |
+| 15 | Partition List | Two stable chains with dummy heads and tail pointers | [View](./PartitionList.java) |
 
 Use [`../LeetCode.md`](../LeetCode.md) for the canonical problem links.
 

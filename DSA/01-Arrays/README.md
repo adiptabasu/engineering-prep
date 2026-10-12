@@ -8,32 +8,32 @@ The goal is not to memorize the 24 solutions. The goal is to recognize the under
 
 ## At-a-Glance Revision
 
-| # | Problem | Attempted / Derived Approach | Idea | Pitfall |
-|---:|---|---|---|---|
-| 1 | Two Sum | HashMap of previously seen values | Find `target - x` in O(1) average lookup | Don't use brute-force pairs |
-| 2 | Contains Duplicate | HashSet / HashMap | A set exposes repeated values immediately | `Set.add()` returns false for an existing value |
-| 3 | Valid Anagram | Frequency map / `int[26]` | Same character frequencies ⇒ anagrams | Sorting is unnecessary when alphabet is fixed |
-| 4 | Group Anagrams | Frequency signature | Equal frequency vectors belong to the same group | Avoid order-dependent keys |
-| 5 | Top K Frequent Elements | Frequency + TreeMap / min-heap | Keep only the k most relevant frequencies | Heap size must stay at `k` |
-| 6 | Product Except Self | Left products + right products | Product on each side can be accumulated independently | Don't divide; zeros must work |
-| 7 | Longest Consecutive Sequence | HashSet + sequence starts | Only count when `num - 1` is absent | Don't sort if O(n) average is desired |
-| 8 | Valid Palindrome | Two pointers | Compare valid characters from both ends | Skip non-alphanumeric characters correctly |
-| 9 | Two Sum II | Two pointers on sorted input | Sum tells which boundary can move | This relies on sorted order |
-| 10 | 3Sum | Sort + two pointers | Fix one value, then solve a 2Sum-style remainder | Duplicate handling is essential |
-| 11 | Best Time to Buy and Sell Stock | Running minimum | Cheapest price so far is the only past state needed | Buy must occur before sell |
-| 12 | Longest Substring Without Repeating Characters | Variable window + index map | Move left past the previous duplicate | Left must never move backward |
-| 13 | Minimum Size Subarray Sum | Variable sliding window | Positive values make sum monotonic under expansion/shrink | Doesn't generalize directly to negative values |
-| 14 | Maximum Average Subarray I | Fixed-size window | Maintain one rolling sum of exactly k elements | Don't recompute every window |
-| 15 | Permutation in String | Fixed window + frequency counts | Compare character-frequency state | Window must remain exactly the pattern length |
-| 16 | Longest Repeating Character Replacement | Variable window + max frequency | Valid when `windowLength - maxFrequency <= k` | `maxFrequency` is the dominant frequency |
-| 17 | Container With Most Water | Two pointers | Move the shorter boundary because width only decreases | Moving the taller side cannot improve the limiting height |
-| 18 | Trapping Rain Water | Prefix/suffix maxima → two pointers | Water is limited by the lower side | The O(1)-space proof depends on boundary dominance |
-| 19 | Subarray Sum Equals K | Prefix sum + frequency map | Look for `currentPrefix - k` among prior prefixes | Negative numbers break ordinary sliding window |
-| 20 | Maximum Product Subarray | Max/min ending states | A negative can turn min into max and vice versa | Preserve previous max/min before updating |
-| 21 | Maximum Subarray | Kadane's algorithm | Best subarray ending here is either current value or previous best + current | Initialize from first element for all-negative arrays |
-| 22 | Subarray Product Less Than K | Variable window + counting | Positive products let the window shrink safely; add `right-left+1` | `k <= 1` ⇒ answer 0 |
-| 23 | Subarrays Divisible by K | Prefix remainder frequency | Same remainder ⇒ difference divisible by k | Normalize Java's negative `%` result |
-| 24 | Longest Increasing Subsequence | O(n²) DP | `dp[i]` = best increasing subsequence ending at i | Subsequence is not necessarily contiguous; global max may be before last index |
+| # | Problem | Attempted / Derived Approach | Idea | Pitfall | Solution |
+|---:|---|---|---|---|---|
+| 1 | Two Sum | HashMap of previously seen values | Find `target - x` in O(1) average lookup | Don't use brute-force pairs | [View](./TwoSum.java) |
+| 2 | Contains Duplicate | HashSet / HashMap | A set exposes repeated values immediately | `Set.add()` returns false for an existing value | [View](./ContainsDuplicate.java) |
+| 3 | Valid Anagram | Frequency map / `int[26]` | Same character frequencies ⇒ anagrams | Sorting is unnecessary when alphabet is fixed | [View](./ValidAnagram.java) |
+| 4 | Group Anagrams | Frequency signature | Equal frequency vectors belong to the same group | Avoid order-dependent keys | [View](./GroupAnagrams.java) |
+| 5 | Top K Frequent Elements | Frequency + TreeMap / min-heap | Keep only the k most relevant frequencies | Heap size must stay at `k` | [View](./TopKFrequent.java) |
+| 6 | Product Except Self | Left products + right products | Product on each side can be accumulated independently | Don't divide; zeros must work | [View](./ProductExceptSelf.java) |
+| 7 | Longest Consecutive Sequence | HashSet + sequence starts | Only count when `num - 1` is absent | Don't sort if O(n) average is desired | [View](./LongestConsecutive.java) |
+| 8 | Valid Palindrome | Two pointers | Compare valid characters from both ends | Skip non-alphanumeric characters correctly | [View](./ValidPalindrome.java) |
+| 9 | Two Sum II | Two pointers on sorted input | Sum tells which boundary can move | This relies on sorted order | [View](./TwoSumII.java) |
+| 10 | 3Sum | Sort + two pointers | Fix one value, then solve a 2Sum-style remainder | Duplicate handling is essential | [View](./ThreeSum.java) |
+| 11 | Best Time to Buy and Sell Stock | Running minimum | Cheapest price so far is the only past state needed | Buy must occur before sell | [View](./BestTimeToBuyAndSellStock.java) |
+| 12 | Longest Substring Without Repeating Characters | Variable window + index map | Move left past the previous duplicate | Left must never move backward | [View](./LongestSubstringWithoutRepeatingCharacters.java) |
+| 13 | Minimum Size Subarray Sum | Variable sliding window | Positive values make sum monotonic under expansion/shrink | Doesn't generalize directly to negative values | [View](./MinimumSizeSubarraySum.java) |
+| 14 | Maximum Average Subarray I | Fixed-size window | Maintain one rolling sum of exactly k elements | Don't recompute every window | [View](./MaximumAverageSubarrayI.java) |
+| 15 | Permutation in String | Fixed window + frequency counts | Compare character-frequency state | Window must remain exactly the pattern length | [View](./PermutationInString.java) |
+| 16 | Longest Repeating Character Replacement | Variable window + max frequency | Valid when `windowLength - maxFrequency <= k` | `maxFrequency` is the dominant frequency | [View](./LongestRepeatingCharacterReplacement.java) |
+| 17 | Container With Most Water | Two pointers | Move the shorter boundary because width only decreases | Moving the taller side cannot improve the limiting height | [View](./ContainerWithMostWater.java) |
+| 18 | Trapping Rain Water | Prefix/suffix maxima → two pointers | Water is limited by the lower side | The O(1)-space proof depends on boundary dominance | [View](./TrappingRainWater.java) |
+| 19 | Subarray Sum Equals K | Prefix sum + frequency map | Look for `currentPrefix - k` among prior prefixes | Negative numbers break ordinary sliding window | [View](./SubarraySumEqualsK.java) |
+| 20 | Maximum Product Subarray | Max/min ending states | A negative can turn min into max and vice versa | Preserve previous max/min before updating | [View](./MaximumProductSubarray.java) |
+| 21 | Maximum Subarray | Kadane's algorithm | Best subarray ending here is either current value or previous best + current | Initialize from first element for all-negative arrays | [View](./MaximumSubarray.java) |
+| 22 | Subarray Product Less Than K | Variable window + counting | Positive products let the window shrink safely; add `right-left+1` | `k <= 1` ⇒ answer 0 | [View](./SubarrayProductLessThanK.java) |
+| 23 | Subarrays Divisible by K | Prefix remainder frequency | Same remainder ⇒ difference divisible by k | Normalize Java's negative `%` result | [View](./SubarraysDivByK.java) |
+| 24 | Longest Increasing Subsequence | O(n²) DP | `dp[i]` = best increasing subsequence ending at i | Subsequence is not necessarily contiguous; global max may be before last index | [View](./LongestIncreasingSubsequence.java) |
 
 ## Pattern Recognition Cheatsheet
 

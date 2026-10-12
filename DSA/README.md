@@ -16,7 +16,7 @@ This directory contains the DSA learning progression, implementations, revision 
 | 08 — Backtracking | Planned | — |
 | 09 — Dynamic Programming | Planned | — |
 
-> Future topic folders will be created when the corresponding section begins. `03-Design/` is a separate category for design problems, not DSA topic 03; the numbered roadmap can evolve as the learning progression develops.
+> Future topic folders will be created when the corresponding section begins. `DSN-Design/` is a separate category for design problems, not DSA topic 03; the numbered roadmap can evolve as the learning progression develops.
 
 ## Learning Method
 
@@ -59,7 +59,7 @@ See [`LeetCode.md`](LeetCode.md) for all canonical LeetCode links in one place.
 
 The second section contains **15 implemented LeetCode problems**. It develops pointer reasoning through traversal, reversal, fast and slow pointers, dummy nodes, cycle detection, intersection, deep copy, and list rearrangement.
 
-See [`02-LinkedLists/README.md`](02-LinkedLists/README.md) for the problem list and revision notes. The LRU Cache is maintained separately under [`03-Design/`](03-Design/) because it combines a hash map with a doubly linked list as a design problem.
+See [`02-LinkedLists/README.md`](02-LinkedLists/README.md) for the problem list and revision notes. The LRU Cache is maintained separately under [`DSN-Design/`](DSN-Design/) because it combines a hash map with a doubly linked list as a design problem.
 
 ## Git Practice
 

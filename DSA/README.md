@@ -7,7 +7,7 @@ This directory contains the DSA learning progression, implementations, revision 
 | Section | Status | Implemented |
 |---|---:|---:|
 | 01 — Arrays & Hashing | Complete | 24 / 24 |
-| 02 — Linked Lists | Not started | — |
+| 02 — Linked Lists | Complete | 15 / 15 |
 | 03 — Stack & Queue | Planned | — |
 | 04 — Binary Search | Planned | — |
 | 05 — Trees | Planned | — |
@@ -54,6 +54,12 @@ The problems cover:
 See [`01-Arrays/README.md`](01-Arrays/README.md) for the at-a-glance revision sheet.
 
 See [`LeetCode.md`](LeetCode.md) for all canonical LeetCode links in one place.
+
+## Completed: Linked Lists
+
+The second section contains **15 implemented LeetCode problems**. It develops pointer reasoning through traversal, reversal, fast and slow pointers, dummy nodes, cycle detection, intersection, deep copy, and list rearrangement.
+
+See [`02-LinkedLists/README.md`](02-LinkedLists/README.md) for the problem list and revision notes. The LRU Cache is maintained separately under [`03-Design/`](03-Design/) because it combines a hash map with a doubly linked list as a design problem.
 
 ## Git Practice
 

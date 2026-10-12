@@ -14,19 +14,9 @@ Systematic study and implementation of common data structures, algorithms, probl
 
 ```text
 DSA/
-├── 00-Complexity/
 ├── 01-Arrays/
 ├── 02-LinkedLists/
-├── 03-StacksQueues/
-├── 04-BinarySearch/
-├── 05-RecursionBacktracking/
-├── 06-Trees/
-├── 07-Heaps/
-├── 08-Graphs/
-├── 09-Greedy/
-├── 10-DynamicProgramming/
-├── 11-Tries/
-└── 12-BitManipulation/
+└── 03-Design/
 ```
 
 Each problem focuses on understanding:
@@ -45,7 +35,7 @@ Where applicable, implementations include links to the original problem for refe
 
 Detailed DSA progress and section-level notes are maintained in [`DSA/README.md`](DSA/README.md).
 
-The completed Arrays & Hashing revision guide is available in [`DSA/01-Arrays/README.md`](DSA/01-Arrays/README.md).
+Topic revision guides are available in [`DSA/01-Arrays/README.md`](DSA/01-Arrays/README.md) and [`DSA/02-LinkedLists/README.md`](DSA/02-LinkedLists/README.md).
 
 All completed LeetCode problem links are collected in [`DSA/LeetCode.md`](DSA/LeetCode.md).
 
@@ -240,7 +230,7 @@ Progress is tracked by topic rather than by simply counting problems.
 
 - 🟢 Complexity Analysis
 - 🟢 Arrays & Hashing — Complete
-- ⚪ Linked Lists
+- 🟢 Linked Lists — Complete
 - ⚪ Stacks & Queues
 - ⚪ Binary Search
 - ⚪ Recursion & Backtracking
@@ -272,6 +262,12 @@ The section currently covers:
 - Stack-based reasoning
 
 The problems are documented individually in the Java source files and summarized in the [Arrays & Hashing revision guide](DSA/01-Arrays/README.md).
+
+### Linked Lists
+
+**15 problems implemented and pushed.** The section covers traversal, reversal, fast and slow pointers, dummy nodes, cycle detection, intersection, deep copying, list rearrangement, and grouped operations. The [Linked Lists revision guide](DSA/02-LinkedLists/README.md) records the problem set and the key reasoning points to revisit.
+
+The LRU Cache implementation is in [`DSA/03-Design/LRUCache.java`](DSA/03-Design/LRUCache.java) and is indexed as a design problem in [`DSA/LeetCode.md`](DSA/LeetCode.md).
 
 The progress indicators represent the current state of the learning journey and may change as topics are revisited at greater depth.
 

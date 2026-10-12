@@ -1,0 +1,44 @@
+# 02 — Linked Lists
+
+**Status: 15 / 15 implemented**
+
+This section builds precise pointer reasoning through common singly linked list operations and patterns. Re-solve problems from the prompt before opening the existing implementation. Explain pointer states, boundaries, and invariants as you work.
+
+## Problem List
+
+| # | Problem | Main pattern to recall |
+|---:|---|---|
+| 1 | Reverse Linked List | Three pointers; preserve the successor before rewiring |
+| 2 | Merge Two Sorted Lists | Dummy head and advancing the smaller node |
+| 3 | Linked List Cycle | Fast and slow pointers |
+| 4 | Remove Nth Node From End of List | Dummy node and a fixed fast/slow gap |
+| 5 | Middle of the Linked List | Fast and slow pointers; choose the second middle |
+| 6 | Palindrome Linked List | Find midpoint, reverse second half, compare |
+| 7 | Reorder List | Split, reverse, and weave two halves |
+| 8 | Copy List with Random Pointer | Hash map or interleaving copies; preserve node identity |
+| 9 | Add Two Numbers | Digit-by-digit traversal with carry |
+| 10 | Intersection of Two Linked Lists | Compare node references; pointer switching aligns distances |
+| 11 | Reverse Linked List II | Dummy node and reconnect a sublist |
+| 12 | Swap Nodes in Pairs | Rewire adjacent nodes through a predecessor |
+| 13 | Reverse Nodes in k-Group | Verify a complete group, reverse, then reconnect |
+| 14 | Rotate List | Measure length, reduce `k`, close and break the cycle |
+| 15 | Partition List | Two stable chains with dummy heads and tail pointers |
+
+Use [`../LeetCode.md`](../LeetCode.md) for the canonical problem links.
+
+## Reasoning Checklist
+
+Before changing a `next` pointer, identify which references must be saved so the rest of the list remains reachable. For each loop, state what the pointers represent before and after one iteration. When reconnecting sections, identify the new head and tail of each section and the boundary that must be preserved.
+
+For problems involving shared lists, compare node references rather than values: equal values do not imply the same node. For incomplete groups or edge cases, verify the boundary before mutating links.
+
+When a variation is unfamiliar, derive a solution from the constraints and required invariants before reaching for a remembered pattern. In particular, keep practicing precise boundary and reconnection explanations for sublist and k-group reversal.
+
+## Re-solving Checklist
+
+1. Draw the nodes and mark each pointer.
+2. State the invariant the algorithm must maintain.
+3. Preserve references before overwriting links.
+4. Check empty, single-node, and boundary cases.
+5. Explain time and auxiliary space from the operations used.
+6. Re-solve from scratch before consulting the implementation.

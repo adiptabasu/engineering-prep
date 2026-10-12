@@ -76,6 +76,60 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 24. **Longest Increasing Subsequence**  
     https://leetcode.com/problems/longest-increasing-subsequence/
 
+## Linked Lists — 15 Problems
+
+1. **Reverse Linked List**
+   https://leetcode.com/problems/reverse-linked-list/
+
+2. **Merge Two Sorted Lists**
+   https://leetcode.com/problems/merge-two-sorted-lists/
+
+3. **Linked List Cycle**
+   https://leetcode.com/problems/linked-list-cycle/
+
+4. **Remove Nth Node From End of List**
+   https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+
+5. **Middle of the Linked List**
+   https://leetcode.com/problems/middle-of-the-linked-list/
+
+6. **Palindrome Linked List**
+   https://leetcode.com/problems/palindrome-linked-list/
+
+7. **Reorder List**
+   https://leetcode.com/problems/reorder-list/
+
+8. **Copy List with Random Pointer**
+   https://leetcode.com/problems/copy-list-with-random-pointer/
+
+9. **Add Two Numbers**
+   https://leetcode.com/problems/add-two-numbers/
+
+10. **Intersection of Two Linked Lists**
+    https://leetcode.com/problems/intersection-of-two-linked-lists/
+
+11. **Reverse Linked List II**
+    https://leetcode.com/problems/reverse-linked-list-ii/
+
+12. **Swap Nodes in Pairs**
+    https://leetcode.com/problems/swap-nodes-in-pairs/
+
+13. **Reverse Nodes in k-Group**
+    https://leetcode.com/problems/reverse-nodes-in-k-group/
+
+14. **Rotate List**
+    https://leetcode.com/problems/rotate-list/
+
+15. **Partition List**
+    https://leetcode.com/problems/partition-list/
+
+## Design — LRU Cache
+
+1. **LRU Cache**
+   https://leetcode.com/problems/lru-cache/
+
+   Implementation: [`03-Design/LRUCache.java`](03-Design/LRUCache.java)
+
 ## Re-solving Order
 
 ### Pass 1 — Recognition

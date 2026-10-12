@@ -16,7 +16,7 @@ Systematic study and implementation of common data structures, algorithms, probl
 DSA/
 ├── 01-Arrays/
 ├── 02-LinkedLists/
-└── 03-Design/
+└── 03-Design/  (design problems; separate from the numbered DSA topics)
 ```
 
 Each problem focuses on understanding:
@@ -34,6 +34,8 @@ Each problem focuses on understanding:
 Where applicable, implementations include links to the original problem for reference.
 
 Detailed DSA progress and section-level notes are maintained in [`DSA/README.md`](DSA/README.md).
+
+The numbered DSA roadmap is tracked separately from design problems: **03 — Stack & Queue** is the next DSA topic, while `DSA/03-Design/` holds design problems such as LRU Cache.
 
 Topic revision guides are available in [`DSA/01-Arrays/README.md`](DSA/01-Arrays/README.md) and [`DSA/02-LinkedLists/README.md`](DSA/02-LinkedLists/README.md).
 

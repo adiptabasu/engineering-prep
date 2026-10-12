@@ -16,7 +16,7 @@ This directory contains the DSA learning progression, implementations, revision 
 | 08 — Backtracking | Planned | — |
 | 09 — Dynamic Programming | Planned | — |
 
-> Future folders will be created when the corresponding section begins. The roadmap can evolve as the learning progression develops.
+> Future topic folders will be created when the corresponding section begins. `03-Design/` is a separate category for design problems, not DSA topic 03; the numbered roadmap can evolve as the learning progression develops.
 
 ## Learning Method
 

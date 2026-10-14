@@ -1,8 +1,8 @@
 # Engineering Learning Repository
 
-A personal repository for studying, practicing, and documenting software engineering concepts through hands-on implementation.
+## About
 
-The goal of this repository is to build **strong fundamentals, practical understanding, and long-term engineering knowledge** rather than simply collecting solutions.
+This is my personal engineering learning repository. It documents hands-on practice in data structures and algorithms, along with notes and implementations from broader software engineering topics as I study them. The focus is on understanding why solutions work, recognizing reusable patterns, and building fundamentals I can apply beyond any one problem—not just collecting answers.
 
 ---
 

@@ -226,7 +226,7 @@ Additional technologies will be added as they become relevant to the learning pr
 
 ## 📈 Progress
 
-Progress is tracked by topic rather than by simply counting problems.
+Progress is tracked by topic rather than by simply counting problems. Which helps make the concepts conctrete.
 
 ### Data Structures & Algorithms
 

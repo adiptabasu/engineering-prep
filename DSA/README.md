@@ -20,6 +20,10 @@ This directory contains the DSA learning progression, implementations, revision 
 
 ## Learning Method
 
+Work through one topic and one pattern at a time, at a pace that fits the available time. Use the topic README for the problem list and revision guide, and its notes index for language-neutral explanations. Current notes are available for [Arrays & Hashing](01-Arrays/notes/README.md) and [Linked Lists](02-LinkedLists/notes/README.md).
+
+For a new pattern, first try to explain the relevant idea from memory. Read the theory notes when you need to clarify the model or invariant, then attempt a representative problem without opening its solution. Ask for hints or simpler examples if stuck; after solving, explain why the approach works and its complexity. Revisit the pattern until several representative problems can be solved and explained independently before moving on.
+
 Each problem follows:
 
 **Understand → Derive → Implement → Test → Explain → Commit → Re-solve**

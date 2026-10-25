@@ -9,11 +9,14 @@ Build a strong software engineering foundation through steady, durable learning.
 - Arrays & Hashing: marked complete in the repo (24 problems).
 - Linked Lists: marked complete in the repo (15 problems).
 - Stack & Queue: active DSA topic; 21 solution files are present. The repo roadmap marks it in progress.
-- These records describe practice and topic status, not independently verified mastery.
+- Current focus: understand stack concepts, including monotonic stacks. Monotonic stack questions felt overwhelming, so the learner stepped back to simpler stack and queue concepts before returning to stack questions.
+- Before moving to another pattern, the learner wants to solve and explain several questions independently.
+- These records describe practice and learner-reported experience, not independently verified mastery.
+- See [LEARNING-JOURNAL.md](LEARNING-JOURNAL.md) for the dated learning note and problem implementation history.
 
 ## Next step
 
-Resume Stack & Queue with a problem selected from its folder. Try it from the prompt before opening the existing solution, then explain the key invariant and complexity. Use any difficulty recalling or explaining the approach to choose what to review. Move to the next DSA topic in the roadmap when the learner is ready.
+Continue with the current Stack & Queue pattern. Try fresh problems before opening existing solutions, use simpler examples or hints to clarify invariants as needed, and explain the approach and complexity. Move to the next pattern only after independently solving and explaining several representative questions.
 
 ## Later sequence
 

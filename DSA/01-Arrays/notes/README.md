@@ -18,6 +18,20 @@ Use a note to understand a pattern, then test the idea on the linked problems wi
 | [Top K and heaps](top-k-and-heaps.md) | You need only the best k elements from a larger collection | [Top K Frequent Elements](../TopKFrequent.java) |
 | [Increasing subsequence DP](increasing-subsequence-dp.md) | A best answer can be built from compatible earlier positions | [Longest Increasing Subsequence](../LongestIncreasingSubsequence.java) |
 
+## Choosing a pattern
+
+Start with the shape of the question rather than a remembered solution:
+
+- Need to find a matching value, complement, or count? Consider hashing.
+- Need a contiguous range whose state can be updated at its boundaries? Consider a sliding window.
+- Need repeated range sums or counts of ranges with a target sum? Consider prefix sums.
+- Is the input sorted, or can a safe boundary rule eliminate candidates? Consider two pointers.
+- Does the answer depend on the best state ending at the current position? Consider a running-state recurrence or dynamic programming.
+- Does membership reveal where a sequence begins? Consider a set and sequence starts.
+- Need only the best k candidates? Consider a bounded heap.
+
+These are clues, not rules. Check the assumptions in the relevant note before applying a pattern.
+
 ## How to use the notes
 
 For each problem, first identify the input properties and the result being requested. Pick a pattern only when its assumptions hold. State the invariant in plain language, trace a small example, and then implement. Afterward, explain why the invariant makes the algorithm correct and where its time and space go.

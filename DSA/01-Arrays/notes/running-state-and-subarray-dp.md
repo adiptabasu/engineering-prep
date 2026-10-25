@@ -44,6 +44,15 @@ For products, keep both the largest and smallest product ending at the current p
 
 A zero naturally allows a new subarray to begin at the next position. Time is O(n); extra space is O(1).
 
+## Why each state is sufficient
+
+For stock profit, once the current sell day is fixed, the best earlier buy is the minimum price seen before that day. No other earlier price can produce a larger profit for this sell day. Scanning every sell day while maintaining that minimum therefore considers the best legal transaction for each possible sell.
+
+For Kadane's recurrence, any non-empty subarray ending at the current value has only two possibilities: it begins here, or it extends a subarray that ended at the previous value. The best of those is the best ending here. Taking the maximum of all such endings gives the best subarray anywhere.
+
+For products, keeping only the maximum ending product is not enough. A negative value reverses ordering: a very negative product can become the largest after multiplication by another negative. The minimum ending product must be retained too. Every product ending at the current value either starts at that value or extends one of the previous maximum or minimum products.
+
+For example, with [-2, 3, -4], the ending maximum/minimum pairs are (-2, -2), then (3, -6), then (24, -12). The negative -6 becomes the maximum when multiplied by -4. This is why both states are necessary.
 ## Practice links
 
 [Best Time to Buy and Sell Stock](../BestTimeToBuyAndSellStock.java) · [Maximum Subarray](../MaximumSubarray.java) · [Maximum Product Subarray](../MaximumProductSubarray.java)

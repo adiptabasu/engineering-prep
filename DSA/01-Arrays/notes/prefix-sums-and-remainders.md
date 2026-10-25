@@ -34,6 +34,15 @@ For languages where remainder can be negative, normalize it into the range from 
 
 Assume k is positive, or normalize the divisor according to the problem definition. Handle zero and negative divisors explicitly if the problem permits them.
 
+## Why the subtraction counts a range
+
+Let prefix[t] be the sum before index t, so it contains exactly the first t values. The range from left through right is everything in prefix[right + 1] that is not in prefix[left]. Subtracting cancels the shared earlier part and leaves only that range.
+
+For a running sum p at the current boundary, a subarray ending here has sum k precisely when an earlier prefix q satisfies p - q = k. Rearranging gives q = p - k. The map stores how many earlier boundaries have that value, so adding its count counts every matching subarray ending here. The initial prefix 0 represents the boundary before the first item.
+
+For values [2, -1, 2] and k = 3, the running prefixes are 2, 1, and 3. At the final 3, the needed earlier prefix is 0, so the whole range is counted. Negative values do not break this reasoning because it depends on subtraction, not on sums changing monotonically.
+
+For divisibility, a range sum is divisible by k when the two prefix sums have equal remainders: their difference is then a multiple of k. Counting earlier occurrences of each remainder counts all such ranges. Normalize negative remainders so mathematically equal remainders use the same map key.
 ## Common pitfalls
 
 - Mixing inclusive and exclusive prefix definitions.

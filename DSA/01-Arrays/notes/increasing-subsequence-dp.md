@@ -19,6 +19,13 @@ The strict comparison matches a strictly increasing sequence. For a non-decreasi
 
 This direct recurrence takes O(n squared) time and O(n) space. It is a useful starting point because the state and transition are explicit. An O(n log n) method also exists, but its tails array is not itself necessarily a longest subsequence; study it as a separate optimization.
 
+## Why the recurrence covers every valid subsequence
+
+Consider an increasing subsequence that ends at index i. If it contains only values[i], its length is one. Otherwise, its previous value must be at some earlier index j where values[j] < values[i]. Among all such j, the longest subsequence ending at j gives the longest one that can be extended to i. Taking the maximum over compatible earlier positions checks every possible predecessor.
+
+For values [10, 9, 2, 5, 3, 7], the best lengths ending at each position are [1, 1, 1, 2, 2, 3]. The answer is 3, even though the last input value is not itself the end of every candidate sequence. One corresponding subsequence is [2, 3, 7].
+
+The dynamic-programming state is deliberately local: it answers “best subsequence ending here.” The final answer is the best state across all endpoints.
 ## Questions to ask
 
 - What does dp[i] mean exactly?

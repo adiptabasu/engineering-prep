@@ -15,6 +15,13 @@ After processing all candidates, the heap contains the k largest scores. Buildin
 
 Whenever the heap exceeds k, its smallest member cannot belong to the best k among everything seen so far: there are already k candidates at least as strong. Removing it preserves the top-k candidates for the processed prefix.
 
+## Why keeping k items is enough
+
+After processing any prefix of the candidates, maintain this invariant: the heap contains the best k candidates seen so far, or all candidates if fewer than k have been seen. When a new candidate arrives, adding it may make the heap too large. The minimum element is then the weakest of the retained set; removing it leaves the strongest k among everything seen.
+
+For example, with scores A=3, B=1, C=2 and k=2, the heap retains A and B after the first two candidates. Adding C makes three; removing the minimum B leaves A and C, the two highest scores. This is why the heap should expose its minimum when retaining the top k.
+
+The proof assumes the heap ordering matches the problem's ranking. If ties require a particular output order, the comparison must include that tie-break rule.
 ## Choices and pitfalls
 
 - Keep a min-heap so the weakest retained candidate is removed quickly.

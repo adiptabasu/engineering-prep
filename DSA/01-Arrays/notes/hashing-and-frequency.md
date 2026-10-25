@@ -26,6 +26,15 @@ A frequency map stores how many times each key occurs.
 
 Two collections are anagrams when every symbol has the same count in both. For a known small alphabet, a fixed-size count vector can replace a map. For grouping, use a canonical key derived from the counts or from sorted symbols. The key must be unambiguous.
 
+## Why lookup and counting work
+
+Before processing an item, the seen set contains exactly the earlier values. For Two Sum, if the current value is x, any valid partner must equal target minus x. Finding that complement in seen proves a pair with two distinct positions; not finding it means no earlier item can pair with this x. Adding x afterward preserves the invariant for the next position.
+
+For example, with values [4, 1, 5] and target 6, the first two items add 4 and 1 to seen. At 5, the required complement is 1, which is already present. The search does not compare 5 with every earlier value.
+
+A frequency map is a compact summary of a multiset: for every possible item, it records how many copies occur. Two strings are anagrams exactly when every symbol has the same count in both. The order of symbols is irrelevant, so a sorted representation or fixed-order count vector can serve as a canonical grouping key.
+
+Expected O(n) time comes from one pass with average-case constant-time map or set operations. It relies on the data structure's expected lookup behavior, not on a guarantee that every lookup is worst-case constant time.
 ## Reasoning checks
 
 - Is equality based on values, symbol counts, or object identity?

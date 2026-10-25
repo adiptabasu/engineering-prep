@@ -6,6 +6,8 @@ This section is the first DSA progression and is intended to be re-solved period
 
 The goal is not to memorize the 24 solutions. The goal is to recognize the underlying constraints and derive the appropriate technique.
 
+Language-neutral explanations of the reusable patterns are in the [theory notes](notes/README.md).
+
 ## At-a-Glance Revision
 
 | # | Problem | Attempted / Derived Approach | Idea | Pitfall | Solution |

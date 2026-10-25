@@ -4,6 +4,8 @@
 
 This section builds precise pointer reasoning through common singly linked list operations and patterns. Re-solve problems from the prompt before opening the existing implementation. Explain pointer states, boundaries, and invariants as you work.
 
+Language-neutral explanations of the data structure and pointer patterns are in the [Linked Lists notes](notes/README.md).
+
 ## Problem List
 
 | # | Problem | Main pattern to recall | Solution |

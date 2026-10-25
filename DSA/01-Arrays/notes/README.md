@@ -8,6 +8,7 @@ Use a note to understand a pattern, then test the idea on the linked problems wi
 
 | Note | Useful when | Related problems |
 |---|---|---|
+| [Array fundamentals](array-fundamentals.md) | You need the basic model, indexing, traversal, and operation costs | All array patterns build on these basics |
 | [Hashing and frequency](hashing-and-frequency.md) | You need fast lookup, counts, or a stable signature | [Two Sum](../TwoSum.java), [Contains Duplicate](../ContainsDuplicate.java), [Valid Anagram](../ValidAnagram.java), [Group Anagrams](../GroupAnagrams.java) |
 | [Two pointers](two-pointers.md) | Ordering or boundary reasoning lets you discard candidates | [Valid Palindrome](../ValidPalindrome.java), [Two Sum II](../TwoSumII.java), [3Sum](../ThreeSum.java), [Container With Most Water](../ContainerWithMostWater.java), [Trapping Rain Water](../TrappingRainWater.java) |
 | [Sliding window](sliding-window.md) | The target is a contiguous range and window changes can be maintained | [Longest Substring Without Repeating Characters](../LongestSubstringWithoutRepeatingCharacters.java), [Minimum Size Subarray Sum](../MinimumSizeSubarraySum.java), [Maximum Average Subarray I](../MaximumAverageSubarrayI.java), [Permutation in String](../PermutationInString.java), [Longest Repeating Character Replacement](../LongestRepeatingCharacterReplacement.java), [Subarray Product Less Than K](../SubarrayProductLessThanK.java) |

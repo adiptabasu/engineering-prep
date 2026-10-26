@@ -12,7 +12,7 @@ Build a strong software engineering foundation through steady, durable learning.
 - Current focus: understand stack concepts, including monotonic stacks. Monotonic stack questions felt overwhelming, so the learner stepped back to simpler stack and queue concepts before returning to stack questions.
 - Before moving to another pattern, the learner wants to solve and explain several questions independently.
 - These records describe practice and learner-reported experience, not independently verified mastery.
-- See [LEARNING-JOURNAL.md](LEARNING-JOURNAL.md) for the dated learning note and problem implementation history.
+- Use the [central learning journal index](LEARNING-JOURNAL.md) to open the current topic's learning notes and problem history.
 
 ## Next step
 

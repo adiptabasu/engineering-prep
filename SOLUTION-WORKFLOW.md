@@ -19,7 +19,7 @@ Use this workflow whenever the learner asks to save a completed LeetCode solutio
 
 ## 3. Record the learning evidence
 
-For every submitted solution, add a concise dated entry to `LEARNING-JOURNAL.md` that records:
+For every submitted solution, add a concise dated entry to that topic's `LEARNING-JOURNAL.md` (for example, `DSA/03-StackQueue/LEARNING-JOURNAL.md`). The root `LEARNING-JOURNAL.md` is an index; add a link there only when a topic journal is created. Each topic entry records:
 
 - the problem and link to its repository solution;
 - the main approach the learner proposed;
@@ -27,7 +27,7 @@ For every submitted solution, add a concise dated entry to `LEARNING-JOURNAL.md`
 - whether the learner reports the LeetCode submission was accepted; and
 - one useful point to revisit, when applicable.
 
-Keep the entry factual and distinguish learner reports from observations in the discussion. Do not claim mastery based only on an accepted submission or a committed file. Show the entry for learner review with the solution. Update the problem implementation history, solution count, and current topic count when needed.
+Keep the entry factual and distinguish learner reports from observations in the discussion. Do not claim mastery based only on an accepted submission or a committed file. Show the entry for learner review with the solution. Update that topic's problem implementation history and counts when needed.
 
 ## 4. Approval, commit, and push
 

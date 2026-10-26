@@ -12,6 +12,10 @@ This entry is based on the learner's report in conversation. Git history provide
 
 For [Next Greater Element II](DSA/03-StackQueue/NextGreaterElementII.java), the learner proposed scanning the circular array twice with a stack. After discussion, they corrected the virtual scan bounds and changed the pop condition to remove equal values as well as smaller values, matching the strictly-greater requirement. The learner reports that the solution was accepted on LeetCode. Independent retention has not yet been checked.
 
+## Learning note — 2026-10-27
+
+For [132 Pattern](DSA/03-StackQueue/Find132Pattern.java), the learner first explored storing low/high pairs and then considered left minima with right-side maxima. Through hints and examples, they identified that suffix extrema lose the order and range information the pattern needs. The learner then asked for the right-to-left monotonic-stack invariant to be explained, implemented that approach, and reports that LeetCode accepted the submission. The learner's goal is to derive the logic independently from the problem, not only reproduce the implementation from memory; this derivation has not yet been demonstrated.
+
 ## LeetCode problem implementation history
 
 The learner reports having solved the questions listed here. The repository contains a Java implementation for each. Dates and short hashes below come from the commit that added each solution file; they record Git activity and may not be the exact study date. A committed implementation is not, by itself, evidence of independent mastery.

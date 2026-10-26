@@ -10,7 +10,5 @@
 ## LeetCode problem workflow
 
 - The learner chooses a LeetCode problem and attempts it before asking for help. When asked, guide with questions, hints, and explanations; do not reveal a full solution prematurely.
-- Help the learner understand and settle on an approach. Do not add a solution file until the learner says they are happy with the approach and asks to submit it.
-- When submitting, create the Java file in the appropriate topic folder, follow neighboring files, put the problem URL near the top, and document the approach, why it works, complexity, and useful pitfalls or edge cases.
-- The explicit instruction “approved; add, commit, and push this solution” authorizes adding only that solution file, committing it, and pushing it to the current branch's configured upstream. Inspect the branch and destination first; if either is unclear, ask before publishing. Do not include unrelated files.
-- Use a focused commit message that matches the repository's recent style.
+- Follow [`SOLUTION-WORKFLOW.md`](SOLUTION-WORKFLOW.md) for solution format, learner approval, journal entries, commit messages, and publishing.
+- An approval of the prepared solution and journal entry authorizes only the documented solution workflow. Inspect the branch and push destination first; if either is unclear, ask before publishing. Do not include unrelated files.

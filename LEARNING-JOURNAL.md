@@ -8,6 +8,10 @@ The learner reports that monotonic stack questions initially felt overwhelming. 
 
 This entry is based on the learner's report in conversation. Git history provides a sequence of implementation commits; it does not establish unaided solving, LeetCode acceptance, or retained understanding.
 
+## Learning note — 2026-10-26
+
+For [Next Greater Element II](DSA/03-StackQueue/NextGreaterElementII.java), the learner proposed scanning the circular array twice with a stack. After discussion, they corrected the virtual scan bounds and changed the pop condition to remove equal values as well as smaller values, matching the strictly-greater requirement. The learner reports that the solution was accepted on LeetCode. Independent retention has not yet been checked.
+
 ## LeetCode problem implementation history
 
 The learner reports having solved the questions listed here. The repository contains a Java implementation for each. Dates and short hashes below come from the commit that added each solution file; they record Git activity and may not be the exact study date. A committed implementation is not, by itself, evidence of independent mastery.
@@ -61,7 +65,7 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-11 | Rotate List | [problem](https://leetcode.com/problems/rotate-list/) | [RotateList.java](DSA/02-LinkedLists/RotateList.java) | 3376646 |
 | 2026-10-11 | Partition List | [problem](https://leetcode.com/problems/partition-list/) | [PartitionList.java](DSA/02-LinkedLists/PartitionList.java) | 9b7d3c0 |
 
-### Stack & Queue — 21
+### Stack & Queue — 22
 
 | Solution commit date | Problem | LeetCode | Repository solution | Commit |
 |---|---|---|---|---|
@@ -86,6 +90,7 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-23 | Remove K Digits | [problem](https://leetcode.com/problems/remove-k-digits/) | [RemoveKDigits.java](DSA/03-StackQueue/RemoveKDigits.java) | c7ad92a |
 | 2026-10-24 | Remove Duplicate Letters | [problem](https://leetcode.com/problems/remove-duplicate-letters/) | [RemoveDuplicateLetters.java](DSA/03-StackQueue/RemoveDuplicateLetters.java) | 620c9c6 |
 | 2026-10-24 | Remove All Adjacent Duplicates in String II | [problem](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [RemoveAllAdjacentDuplicatesInStringII.java](DSA/03-StackQueue/RemoveAllAdjacentDuplicatesInStringII.java) | 1777816 |
+| 2026-10-26 | Next Greater Element II | [problem](https://leetcode.com/problems/next-greater-element-ii/) | [NextGreaterElementII.java](DSA/03-StackQueue/NextGreaterElementII.java) | 317f7ba |
 
 ### Design — 1
 

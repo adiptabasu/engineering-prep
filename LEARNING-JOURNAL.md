@@ -69,7 +69,7 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-11 | Rotate List | [problem](https://leetcode.com/problems/rotate-list/) | [RotateList.java](DSA/02-LinkedLists/RotateList.java) | 3376646 |
 | 2026-10-11 | Partition List | [problem](https://leetcode.com/problems/partition-list/) | [PartitionList.java](DSA/02-LinkedLists/PartitionList.java) | 9b7d3c0 |
 
-### Stack & Queue — 22
+### Stack & Queue — 23
 
 | Solution commit date | Problem | LeetCode | Repository solution | Commit |
 |---|---|---|---|---|
@@ -95,6 +95,7 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-24 | Remove Duplicate Letters | [problem](https://leetcode.com/problems/remove-duplicate-letters/) | [RemoveDuplicateLetters.java](DSA/03-StackQueue/RemoveDuplicateLetters.java) | 620c9c6 |
 | 2026-10-24 | Remove All Adjacent Duplicates in String II | [problem](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [RemoveAllAdjacentDuplicatesInStringII.java](DSA/03-StackQueue/RemoveAllAdjacentDuplicatesInStringII.java) | 1777816 |
 | 2026-10-26 | Next Greater Element II | [problem](https://leetcode.com/problems/next-greater-element-ii/) | [NextGreaterElementII.java](DSA/03-StackQueue/NextGreaterElementII.java) | 317f7ba |
+| 2026-10-27 | 132 Pattern | [problem](https://leetcode.com/problems/132-pattern/) | [Find132Pattern.java](DSA/03-StackQueue/Find132Pattern.java) | 8e398e3 |
 
 ### Design — 1
 

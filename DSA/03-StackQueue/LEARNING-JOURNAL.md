@@ -22,6 +22,12 @@ For [Find the Most Competitive Subsequence](MostCompetitiveSubsequence.java), th
 
 **Revisit:** Practice recognizing when a monotonic stack fits and deriving its invariant from the problem constraints. For this problem, explain why a larger stack value can be removed only while the deletion budget remains, and why leftover removals come from the end.
 
+## Learning note — 2026-10-27
+
+For [Maximum Width Ramp](MaximumWidthRamp.java), the learner first described the O(n²) pair-checking approach. With guidance, they recognized that an earlier index with a lower or equal value dominates a later starting index, then built a stack of prefix-minimum candidates and scanned possible right endpoints from right to left. They needed help correcting the candidate-stack construction and changing the endpoint check from a single `if` to a `while`. The learner reports that the submitted solution was accepted and says they needed help developing the optimized code.
+
+**Revisit:** Derive the dominance rule for candidate starts and why scanning endpoints from right to left lets each matched start be discarded.
+
 ## Problem implementation history
 
 The learner reports having solved the questions listed here. The repository contains a Java implementation for each. Dates and short hashes below come from the commit that added each solution file; they record Git activity and may not be the exact study date. A committed implementation is not, by itself, evidence of independent mastery.

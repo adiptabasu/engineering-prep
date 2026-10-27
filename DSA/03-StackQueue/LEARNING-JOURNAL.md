@@ -16,6 +16,12 @@ For [Next Greater Element II](NextGreaterElementII.java), the learner proposed s
 
 For [132 Pattern](Find132Pattern.java), the learner first explored storing low/high pairs and then considered left minima with right-side maxima. Through hints and examples, they identified that suffix extrema lose the order and range information the pattern needs. The learner then asked for the right-to-left monotonic-stack invariant to be explained, implemented that approach, and reports that LeetCode accepted the submission. The learner's goal is to derive the logic independently from the problem, not only reproduce the implementation from memory; this derivation has not yet been demonstrated.
 
+## Learning note — 2026-10-27
+
+For [Find the Most Competitive Subsequence](MostCompetitiveSubsequence.java), the learner understood that the result must use small values while preserving order and reasoned about which early positions leave enough values to complete the subsequence. Hints did not make the full logic clear, so the learner used a YouTube explanation, implemented the monotonic-stack greedy approach, and debugged the code. Review caught a double decrement in the final removal loop; the learner corrected it and reports that LeetCode accepted the solution. The learner reports knowing how to use a monotonic stack once the approach is known, while deriving when and how to use it does not yet come naturally.
+
+**Revisit:** Practice recognizing when a monotonic stack fits and deriving its invariant from the problem constraints. For this problem, explain why a larger stack value can be removed only while the deletion budget remains, and why leftover removals come from the end.
+
 ## Problem implementation history
 
 The learner reports having solved the questions listed here. The repository contains a Java implementation for each. Dates and short hashes below come from the commit that added each solution file; they record Git activity and may not be the exact study date. A committed implementation is not, by itself, evidence of independent mastery.

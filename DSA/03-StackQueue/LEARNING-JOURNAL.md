@@ -26,7 +26,7 @@ For [Find the Most Competitive Subsequence](MostCompetitiveSubsequence.java), th
 
 The learner reports having solved the questions listed here. The repository contains a Java implementation for each. Dates and short hashes below come from the commit that added each solution file; they record Git activity and may not be the exact study date. A committed implementation is not, by itself, evidence of independent mastery.
 
-### Stack & Queue — 23
+### Stack & Queue — 24
 
 | Solution commit date | Problem | LeetCode | Repository solution | Commit |
 |---|---|---|---|---|
@@ -53,3 +53,4 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-24 | Remove All Adjacent Duplicates in String II | [problem](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [RemoveAllAdjacentDuplicatesInStringII.java](RemoveAllAdjacentDuplicatesInStringII.java) | 1777816 |
 | 2026-10-26 | Next Greater Element II | [problem](https://leetcode.com/problems/next-greater-element-ii/) | [NextGreaterElementII.java](NextGreaterElementII.java) | 317f7ba |
 | 2026-10-27 | 132 Pattern | [problem](https://leetcode.com/problems/132-pattern/) | [Find132Pattern.java](Find132Pattern.java) | 8e398e3 |
+| 2026-10-27 | Find the Most Competitive Subsequence | [problem](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [MostCompetitiveSubsequence.java](MostCompetitiveSubsequence.java) | ef1a974 |

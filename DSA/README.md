@@ -8,7 +8,7 @@ This directory contains the DSA learning progression, implementations, revision 
 |---|---:|---:|
 | 01 — Arrays & Hashing | Complete | 24 / 24 |
 | 02 — Linked Lists | Complete | 15 / 15 |
-| 03 — Stack & Queue | In progress | 24 solutions present |
+| 03 — Stack & Queue | In progress | 25 solutions present |
 | 04 — Binary Search | Planned | — |
 | 05 — Trees | Planned | — |
 | 06 — Heap / Priority Queue | Planned | — |

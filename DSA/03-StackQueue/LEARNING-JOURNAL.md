@@ -14,6 +14,10 @@ For [Sum of Subarray Minimums](SumOfSubarrayMinimums.java), the learner first tr
 
 **Revisit:** Explain what each `(minimum, count)` group represents, why groups with minimum greater than or equal to the incoming value merge, and how `endingSum` is updated.
 
+## Follow-up — 2026-10-29
+
+The learner reports watching several videos and reading implementations for Sum of Subarray Minimums, but the reasoning still has not clicked. Pause this explanation for now and revisit the problem later from the per-index subarray view, without assuming the implementation is understood.
+
 ## Learning note — 2026-10-26
 
 For [Next Greater Element II](NextGreaterElementII.java), the learner proposed scanning the circular array twice with a stack. After discussion, they corrected the virtual scan bounds and changed the pop condition to remove equal values as well as smaller values, matching the strictly-greater requirement. The learner reports that the solution was accepted on LeetCode. Independent retention has not yet been checked.

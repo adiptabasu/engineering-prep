@@ -8,6 +8,12 @@ The learner reports that monotonic stack questions initially felt overwhelming. 
 
 This entry is based on the learner's report in conversation. Git history provides a sequence of implementation commits; it does not establish unaided solving, LeetCode acceptance, or retained understanding.
 
+## Learning note — 2026-10-28
+
+For [Sum of Subarray Minimums](SumOfSubarrayMinimums.java), the learner first tried tracking a prefix minimum and a cumulative count in a stack. We used `[3, 1, 2, 4]` to expose that subarrays ending at one index can have different minimums. The learner asked for pseudocode, then translated the grouped-minimum approach into Java with direct implementation help. The learner reports that the submission was accepted on LeetCode. Independent derivation of the invariant is still to be checked.
+
+**Revisit:** Explain what each `(minimum, count)` group represents, why groups with minimum greater than or equal to the incoming value merge, and how `endingSum` is updated.
+
 ## Learning note — 2026-10-26
 
 For [Next Greater Element II](NextGreaterElementII.java), the learner proposed scanning the circular array twice with a stack. After discussion, they corrected the virtual scan bounds and changed the pop condition to remove equal values as well as smaller values, matching the strictly-greater requirement. The learner reports that the solution was accepted on LeetCode. Independent retention has not yet been checked.
@@ -32,7 +38,7 @@ For [Maximum Width Ramp](MaximumWidthRamp.java), the learner first described the
 
 The learner reports having solved the questions listed here. The repository contains a Java implementation for each. Dates and short hashes below come from the commit that added each solution file; they record Git activity and may not be the exact study date. A committed implementation is not, by itself, evidence of independent mastery.
 
-### Stack & Queue — 25
+### Stack & Queue — 26
 
 | Solution commit date | Problem | LeetCode | Repository solution | Commit |
 |---|---|---|---|---|
@@ -61,3 +67,4 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-27 | 132 Pattern | [problem](https://leetcode.com/problems/132-pattern/) | [Find132Pattern.java](Find132Pattern.java) | 8e398e3 |
 | 2026-10-27 | Find the Most Competitive Subsequence | [problem](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [MostCompetitiveSubsequence.java](MostCompetitiveSubsequence.java) | ef1a974 |
 | 2026-10-27 | Maximum Width Ramp | [problem](https://leetcode.com/problems/maximum-width-ramp/) | [MaximumWidthRamp.java](MaximumWidthRamp.java) | 3ad79e2 |
+| 2026-10-28 | Sum of Subarray Minimums | [problem](https://leetcode.com/problems/sum-of-subarray-minimums/) | [SumOfSubarrayMinimums.java](SumOfSubarrayMinimums.java) | ada5bb2 |

@@ -26,3 +26,7 @@ Use the fundamentals note to understand the structure, then study the operation 
 Before changing a link, identify every node that must remain reachable and save its reference. State what each pointer means before and after the update. When an operation changes a segment, track the segment's old head and tail: after reversal, those roles switch.
 
 All pseudocode is language-neutral. The complexity of a basic operation depends on which references the list maintains; notes state the assumptions where that matters.
+
+## Coverage boundaries
+
+The practiced set covers the main singly linked-list operations and pointer patterns: reversal, splitting and weaving, stable merge/partition, fast/slow traversal, fixed gaps, node identity, and random-pointer copying. The fast/slow note now also explains finding a cycle's entry and length, though there is no corresponding practice solution. Other useful extensions not represented in the current problem list include merging k sorted lists, recursive reversal, and practicing doubly linked-list operations beyond the fundamentals. These are extensions, not prerequisites for understanding the existing notes.

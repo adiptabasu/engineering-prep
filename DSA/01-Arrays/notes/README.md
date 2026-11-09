@@ -14,6 +14,7 @@ Use a note to understand a pattern, then test the idea on the linked problems wi
 | [Sorting fundamentals](sorting-fundamentals.md) | Reordering values may expose adjacency, order, or duplicate groups | [Two Sum II](../TwoSumII.java), [3Sum](../ThreeSum.java) |
 | [Hashing and frequency](hashing-and-frequency.md) | You need fast lookup, counts, or a stable signature | [Two Sum](../TwoSum.java), [Contains Duplicate](../ContainsDuplicate.java), [Valid Anagram](../ValidAnagram.java), [Group Anagrams](../GroupAnagrams.java) |
 | [Hash table mechanics](hash-table-mechanics.md) | You want to understand hashing, collisions, resizing, and average-case lookup | Supports the [hashing and frequency](hashing-and-frequency.md) pattern |
+| [Hashing interview extensions](hashing-interview-extensions.md) | You need an unambiguous string format or uniqueness checks across grid groups | Encode and Decode Strings; Valid Sudoku (not currently in the practiced problem list) |
 | [Two pointers](two-pointers.md) | Ordering or boundary reasoning lets you discard candidates | [Valid Palindrome](../ValidPalindrome.java), [Two Sum II](../TwoSumII.java), [3Sum](../ThreeSum.java), [Container With Most Water](../ContainerWithMostWater.java), [Trapping Rain Water](../TrappingRainWater.java) |
 | [Sliding window](sliding-window.md) | The target is a contiguous range and window changes can be maintained | [Longest Substring Without Repeating Characters](../LongestSubstringWithoutRepeatingCharacters.java), [Minimum Size Subarray Sum](../MinimumSizeSubarraySum.java), [Maximum Average Subarray I](../MaximumAverageSubarrayI.java), [Permutation in String](../PermutationInString.java), [Longest Repeating Character Replacement](../LongestRepeatingCharacterReplacement.java), [Subarray Product Less Than K](../SubarrayProductLessThanK.java) |
 | [Prefix sums and remainders](prefix-sums-and-remainders.md) | You need range sums or counts of subarrays meeting a sum or divisibility condition | [Subarray Sum Equals K](../SubarraySumEqualsK.java), [Subarrays Divisible by K](../SubarraysDivByK.java) |
@@ -38,6 +39,10 @@ Start with the shape of the question rather than a remembered solution:
 - Need only the best k candidates? Consider a bounded heap.
 
 These are clues, not rules. Check the assumptions in the relevant note before applying a pattern.
+
+## Coverage boundaries
+
+The practiced set has strong coverage of lookup, frequency maps, sequence starts, prefix sums, two pointers, sliding windows, and running-state patterns. The notes on matrices, difference arrays, and cyclic index placement are reference material without a linked problem in this section. Encode and Decode Strings and Valid Sudoku are two common hashing applications not yet represented by solution files; see [Hashing interview extensions](hashing-interview-extensions.md). Binary Search is a separate planned DSA section in the [roadmap](../../README.md), rather than a missing hashing note.
 
 ## How to use the notes
 

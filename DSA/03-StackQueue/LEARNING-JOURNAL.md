@@ -24,6 +24,12 @@ For [Sum of Subarray Minimums](SumOfSubarrayMinimums.java), the learner derived 
 
 **Revisit:** Explain why the previous pass keeps equal values while the next pass removes them, and how the two distances count subarrays without double-counting duplicate minimums.
 
+## Learning note — 2026-11-10
+
+For [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-ranges/), the learner proposed using previous and next smaller and greater boundaries, then summing each element's maximum contribution minus its minimum contribution. They implemented all four index-based monotonic-stack passes and report that LeetCode accepted the submission. Guidance was needed to reverse the initial subtraction order, use `long` for the method result and contribution products, and match LeetCode's `subArrayRanges` method name. The saved solution is [SumOfSubarrayRanges.java](SumOfSubarrayRanges.java).
+
+**Revisit:** Explain how the asymmetric equality rules assign subarrays with duplicate minima and maxima exactly once.
+
 ## Learning note — 2026-10-26
 
 For [Next Greater Element II](NextGreaterElementII.java), the learner proposed scanning the circular array twice with a stack. After discussion, they corrected the virtual scan bounds and changed the pop condition to remove equal values as well as smaller values, matching the strictly-greater requirement. The learner reports that the solution was accepted on LeetCode. Independent retention has not yet been checked.
@@ -48,7 +54,7 @@ For [Maximum Width Ramp](MaximumWidthRamp.java), the learner first described the
 
 The learner reports having solved the questions listed here. The repository contains a Java implementation for each. Dates and short hashes below come from the commit that added each solution file; they record Git activity and may not be the exact study date. A committed implementation is not, by itself, evidence of independent mastery.
 
-### Stack & Queue — 26
+### Stack & Queue — 27
 
 | Solution commit date | Problem | LeetCode | Repository solution | Commit |
 |---|---|---|---|---|
@@ -78,3 +84,4 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-27 | Find the Most Competitive Subsequence | [problem](https://leetcode.com/problems/find-the-most-competitive-subsequence/) | [MostCompetitiveSubsequence.java](MostCompetitiveSubsequence.java) | ef1a974 |
 | 2026-10-27 | Maximum Width Ramp | [problem](https://leetcode.com/problems/maximum-width-ramp/) | [MaximumWidthRamp.java](MaximumWidthRamp.java) | 3ad79e2 |
 | 2026-10-28 | Sum of Subarray Minimums | [problem](https://leetcode.com/problems/sum-of-subarray-minimums/) | [SumOfSubarrayMinimums.java](SumOfSubarrayMinimums.java) | ada5bb2 |
+| 2026-11-10 | Sum of Subarray Ranges | [problem](https://leetcode.com/problems/sum-of-subarray-ranges/) | [SumOfSubarrayRanges.java](SumOfSubarrayRanges.java) | pending |

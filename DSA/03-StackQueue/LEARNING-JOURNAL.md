@@ -18,6 +18,12 @@ For [Sum of Subarray Minimums](SumOfSubarrayMinimums.java), the learner first tr
 
 The learner reports watching several videos and reading implementations for Sum of Subarray Minimums, but the reasoning still has not clicked. Pause this explanation for now and revisit the problem later from the per-index subarray view, without assuming the implementation is understood.
 
+## Alternate approach — 2026-11-10
+
+For [Sum of Subarray Minimums](SumOfSubarrayMinimums.java), the learner derived a per-index contribution approach using previous and next smaller boundaries, implemented index-based monotonic-stack passes, and reports that the LeetCode submission was accepted. Guidance was needed to distinguish greater from smaller boundaries, store and compare indices correctly, use `arr.length` as the missing right boundary, make the duplicate-value comparisons asymmetric, accumulate contributions, widen multiplication to `long`, and correct the reverse scan decrement. The alternate implementation is saved in [SumOfSubarrayMinimumsByBoundaries.java](SumOfSubarrayMinimumsByBoundaries.java); the original grouped-minimum implementation remains unchanged.
+
+**Revisit:** Explain why the previous pass keeps equal values while the next pass removes them, and how the two distances count subarrays without double-counting duplicate minimums.
+
 ## Learning note — 2026-10-26
 
 For [Next Greater Element II](NextGreaterElementII.java), the learner proposed scanning the circular array twice with a stack. After discussion, they corrected the virtual scan bounds and changed the pop condition to remove equal values as well as smaller values, matching the strictly-greater requirement. The learner reports that the solution was accepted on LeetCode. Independent retention has not yet been checked.

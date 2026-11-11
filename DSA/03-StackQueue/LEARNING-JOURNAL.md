@@ -36,6 +36,12 @@ For [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarra
 
 **Revisit:** Explain why the widest span bounded by smaller values is sufficient when all array values are positive, and how the exclusive prefix-sum indices map to the span.
 
+## Learning note — 2026-11-12
+
+For [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/), the learner first tried maintaining all window indices and a running sum, then changed to a monotonic deque of candidate indices. With a dry run and guidance, they corrected the expiry test to remove indices before the current window and confirmed equal-value handling on `[4, 4, 4, 4]` with `k = 2`. The learner reports that LeetCode accepted the solution. The implementation is saved in [SlidingWindowMaximum.java](SlidingWindowMaximum.java).
+
+**Revisit:** Explain why a newer value can remove smaller-or-equal values from the deque's back, and why the front index gives the current maximum.
+
 ## Learning note — 2026-10-26
 
 For [Next Greater Element II](NextGreaterElementII.java), the learner proposed scanning the circular array twice with a stack. After discussion, they corrected the virtual scan bounds and changed the pop condition to remove equal values as well as smaller values, matching the strictly-greater requirement. The learner reports that the solution was accepted on LeetCode. Independent retention has not yet been checked.
@@ -60,7 +66,7 @@ For [Maximum Width Ramp](MaximumWidthRamp.java), the learner first described the
 
 The learner reports having solved the questions listed here. The repository contains a Java implementation for each. Dates and short hashes below come from the commit that added each solution file; they record Git activity and may not be the exact study date. A committed implementation is not, by itself, evidence of independent mastery.
 
-### Stack & Queue — 28
+### Stack & Queue — 29
 
 | Solution commit date | Problem | LeetCode | Repository solution | Commit |
 |---|---|---|---|---|
@@ -92,3 +98,4 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-28 | Sum of Subarray Minimums | [problem](https://leetcode.com/problems/sum-of-subarray-minimums/) | [SumOfSubarrayMinimums.java](SumOfSubarrayMinimums.java) | ada5bb2 |
 | 2026-11-10 | Sum of Subarray Ranges | [problem](https://leetcode.com/problems/sum-of-subarray-ranges/) | [SumOfSubarrayRanges.java](SumOfSubarrayRanges.java) | f9155f9 |
 | 2026-11-12 | Maximum Subarray Min-Product | [problem](https://leetcode.com/problems/maximum-subarray-min-product/) | [MaximumSubarrayMinProduct.java](MaximumSubarrayMinProduct.java) | aadcc88 |
+| 2026-11-12 | Sliding Window Maximum | [problem](https://leetcode.com/problems/sliding-window-maximum/) | [SlidingWindowMaximum.java](SlidingWindowMaximum.java) | pending |

@@ -123,6 +123,68 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 15. **Partition List**
     https://leetcode.com/problems/partition-list/
 
+## Stack & Queue — 30 Problems
+
+1. [**Valid Parentheses**](https://leetcode.com/problems/valid-parentheses/)
+
+2. [**Next Greater Element I**](https://leetcode.com/problems/next-greater-element-i/)
+
+3. [**Daily Temperatures**](https://leetcode.com/problems/daily-temperatures/)
+
+4. [**Final Prices With a Special Discount in a Shop**](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/)
+
+5. [**Online Stock Span**](https://leetcode.com/problems/online-stock-span/)
+
+6. [**Largest Rectangle in Histogram**](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+
+7. [**Trapping Rain Water**](https://leetcode.com/problems/trapping-rain-water/)
+
+8. [**Implement Queue using Stacks**](https://leetcode.com/problems/implement-queue-using-stacks/)
+
+9. [**Number of Recent Calls**](https://leetcode.com/problems/number-of-recent-calls/)
+
+10. [**Design Circular Queue**](https://leetcode.com/problems/design-circular-queue/)
+
+11. [**Implement Stack using Queues**](https://leetcode.com/problems/implement-stack-using-queues/)
+
+12. [**Evaluate Reverse Polish Notation**](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
+
+13. [**Simplify Path**](https://leetcode.com/problems/simplify-path/)
+
+14. [**Asteroid Collision**](https://leetcode.com/problems/asteroid-collision/)
+
+15. [**Removing Stars From a String**](https://leetcode.com/problems/removing-stars-from-a-string/)
+
+16. [**Make The String Great**](https://leetcode.com/problems/make-the-string-great/)
+
+17. [**Backspace String Compare**](https://leetcode.com/problems/backspace-string-compare/)
+
+18. [**Decode String**](https://leetcode.com/problems/decode-string/)
+
+19. [**Remove K Digits**](https://leetcode.com/problems/remove-k-digits/)
+
+20. [**Remove Duplicate Letters**](https://leetcode.com/problems/remove-duplicate-letters/)
+
+21. [**Remove All Adjacent Duplicates in String II**](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/)
+
+22. [**Next Greater Element II**](https://leetcode.com/problems/next-greater-element-ii/)
+
+23. [**132 Pattern**](https://leetcode.com/problems/132-pattern/)
+
+24. [**Find the Most Competitive Subsequence**](https://leetcode.com/problems/find-the-most-competitive-subsequence/)
+
+25. [**Maximum Width Ramp**](https://leetcode.com/problems/maximum-width-ramp/)
+
+26. [**Sum of Subarray Minimums**](https://leetcode.com/problems/sum-of-subarray-minimums/)
+
+27. [**Sum of Subarray Ranges**](https://leetcode.com/problems/sum-of-subarray-ranges/)
+
+28. [**Maximum Subarray Min-Product**](https://leetcode.com/problems/maximum-subarray-min-product/)
+
+29. [**Sliding Window Maximum**](https://leetcode.com/problems/sliding-window-maximum/)
+
+30. [**Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit**](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
+
 ## Design — LRU Cache
 
 1. **LRU Cache**

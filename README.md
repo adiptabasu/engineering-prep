@@ -16,6 +16,7 @@ Systematic study and implementation of common data structures, algorithms, probl
 DSA/
 ├── 01-Arrays/
 ├── 02-LinkedLists/
+├── 03-StackQueue/
 └── DSN-Design/  (design problems; separate from the numbered DSA topics)
 ```
 
@@ -35,9 +36,9 @@ Where applicable, implementations include links to the original problem for refe
 
 Detailed DSA progress and section-level notes are maintained in [`DSA/README.md`](DSA/README.md).
 
-The numbered DSA roadmap is tracked separately from design problems: **03 — Stack & Queue** is the next DSA topic, while `DSA/DSN-Design/` holds design problems such as LRU Cache.
+The numbered DSA roadmap is tracked separately from design problems: **03 — Stack & Queue** is complete for its current problem set, and **04 — Binary Search** is next. `DSA/DSN-Design/` holds design problems such as LRU Cache.
 
-Topic revision guides are available in [`DSA/01-Arrays/README.md`](DSA/01-Arrays/README.md) and [`DSA/02-LinkedLists/README.md`](DSA/02-LinkedLists/README.md).
+Topic revision guides are available in [`DSA/01-Arrays/README.md`](DSA/01-Arrays/README.md), [`DSA/02-LinkedLists/README.md`](DSA/02-LinkedLists/README.md), and [`DSA/03-StackQueue/README.md`](DSA/03-StackQueue/README.md). The Stack & Queue pattern notes are indexed in [`DSA/03-StackQueue/notes/README.md`](DSA/03-StackQueue/notes/README.md).
 
 All completed LeetCode problem links are collected in [`DSA/LeetCode.md`](DSA/LeetCode.md).
 
@@ -233,8 +234,8 @@ Progress is tracked by topic rather than by simply counting problems. Which help
 - 🟢 Complexity Analysis
 - 🟢 Arrays & Hashing — Complete
 - 🟢 Linked Lists — Complete
-- ⚪ Stacks & Queues
-- ⚪ Binary Search
+- 🟢 Stack & Queue — Complete for current problem set
+- 🟡 Binary Search — Next
 - ⚪ Recursion & Backtracking
 - ⚪ Trees & BST
 - ⚪ Heaps
@@ -270,6 +271,12 @@ The problems are documented individually in the Java source files and summarized
 **15 problems implemented and pushed.** The section covers traversal, reversal, fast and slow pointers, dummy nodes, cycle detection, intersection, deep copying, list rearrangement, and grouped operations. The [Linked Lists revision guide](DSA/02-LinkedLists/README.md) records the problem set and the key reasoning points to revisit.
 
 The LRU Cache implementation is in [`DSA/DSN-Design/LRUCache.java`](DSA/DSN-Design/LRUCache.java) and is indexed as a design problem in [`DSA/LeetCode.md`](DSA/LeetCode.md).
+
+### Stack & Queue
+
+**30 unique problems recorded and pushed.** The section covers stack/queue design, parsing and simulation, monotonic stacks, subarray boundaries and contributions, and monotonic deques for sliding windows. See the [Stack & Queue revision guide](DSA/03-StackQueue/README.md) and its [pattern notes](DSA/03-StackQueue/notes/README.md). The problem set records practice; it does not by itself establish independent mastery.
+
+Binary Search is the next DSA section.
 
 The progress indicators represent the current state of the learning journey and may change as topics are revisited at greater depth.
 

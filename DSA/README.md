@@ -8,8 +8,8 @@ This directory contains the DSA learning progression, implementations, revision 
 |---|---:|---:|
 | 01 — Arrays & Hashing | Complete | 24 / 24 |
 | 02 — Linked Lists | Complete | 15 / 15 |
-| 03 — Stack & Queue | In progress | 26 solutions present |
-| 04 — Binary Search | Planned | — |
+| 03 — Stack & Queue | Complete for current problem set | 30 problems recorded |
+| 04 — Binary Search | Next | Not started |
 | 05 — Trees | Planned | — |
 | 06 — Heap / Priority Queue | Planned | — |
 | 07 — Graphs | Planned | — |
@@ -20,7 +20,7 @@ This directory contains the DSA learning progression, implementations, revision 
 
 ## Learning Method
 
-Work through one topic and one pattern at a time, at a pace that fits the available time. Use the topic README for the problem list and revision guide, and its notes index for language-neutral explanations. Current notes are available for [Arrays & Hashing](01-Arrays/notes/README.md) and [Linked Lists](02-LinkedLists/notes/README.md).
+Work through one topic and one pattern at a time, at a pace that fits the available time. Use the topic README for the problem list and revision guide, and its notes index for language-neutral explanations. Current notes are available for [Arrays & Hashing](01-Arrays/notes/README.md), [Linked Lists](02-LinkedLists/notes/README.md), and [Stack & Queue](03-StackQueue/notes/README.md).
 
 For a new pattern, first try to explain the relevant idea from memory. Read the theory notes when you need to clarify the model or invariant, then attempt a representative problem without opening its solution. Ask for hints or simpler examples if stuck; after solving, explain why the approach works and its complexity. Revisit the pattern until several representative problems can be solved and explained independently before moving on.
 
@@ -64,6 +64,12 @@ See [`LeetCode.md`](LeetCode.md) for all canonical LeetCode links in one place.
 The second section contains **15 implemented LeetCode problems**. It develops pointer reasoning through traversal, reversal, fast and slow pointers, dummy nodes, cycle detection, intersection, deep copy, and list rearrangement.
 
 See [`02-LinkedLists/README.md`](02-LinkedLists/README.md) for the problem list and revision notes. The LRU Cache is maintained separately under [`DSN-Design/`](DSN-Design/) because it combines a hash map with a doubly linked list as a design problem.
+
+## Completed for the current problem set: Stack & Queue
+
+The third section has 30 unique problem implementations recorded. It covers stack and queue operations, design with stacks/queues, parsing and simulation, monotonic stacks and boundary contributions, and monotonic deques for fixed and variable sliding windows. See [`03-StackQueue/README.md`](03-StackQueue/README.md) for the problem list and [`03-StackQueue/notes/README.md`](03-StackQueue/notes/README.md) for the pattern notes. A recorded solution set describes practice coverage, not independently verified mastery.
+
+The next DSA section is Binary Search.
 
 ## Git Practice
 

@@ -42,6 +42,12 @@ For [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximu
 
 **Revisit:** Explain why a newer value can remove smaller-or-equal values from the deque's back, and why the front index gives the current maximum.
 
+## Learning note — 2026-11-12
+
+For [Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/), the learner recognized that a window's largest pairwise difference is its maximum minus its minimum and used two monotonic deques. With guidance, they changed a nested scan to one advancing right pointer, shrank the left edge only while the window was invalid, compared values through stored indices, and evicted indices leaving the window. The learner reports that LeetCode accepted the solution. The implementation is saved in [LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.java](LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.java).
+
+**Revisit:** Explain why each deque front tracks the current extremum and why moving the left edge until the condition is valid yields a candidate longest window at each right endpoint.
+
 ## Learning note — 2026-10-26
 
 For [Next Greater Element II](NextGreaterElementII.java), the learner proposed scanning the circular array twice with a stack. After discussion, they corrected the virtual scan bounds and changed the pop condition to remove equal values as well as smaller values, matching the strictly-greater requirement. The learner reports that the solution was accepted on LeetCode. Independent retention has not yet been checked.
@@ -66,7 +72,7 @@ For [Maximum Width Ramp](MaximumWidthRamp.java), the learner first described the
 
 The learner reports having solved the questions listed here. The repository contains a Java implementation for each. Dates and short hashes below come from the commit that added each solution file; they record Git activity and may not be the exact study date. A committed implementation is not, by itself, evidence of independent mastery.
 
-### Stack & Queue — 29
+### Stack & Queue — 30
 
 | Solution commit date | Problem | LeetCode | Repository solution | Commit |
 |---|---|---|---|---|
@@ -99,3 +105,4 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-11-10 | Sum of Subarray Ranges | [problem](https://leetcode.com/problems/sum-of-subarray-ranges/) | [SumOfSubarrayRanges.java](SumOfSubarrayRanges.java) | f9155f9 |
 | 2026-11-12 | Maximum Subarray Min-Product | [problem](https://leetcode.com/problems/maximum-subarray-min-product/) | [MaximumSubarrayMinProduct.java](MaximumSubarrayMinProduct.java) | aadcc88 |
 | 2026-11-12 | Sliding Window Maximum | [problem](https://leetcode.com/problems/sliding-window-maximum/) | [SlidingWindowMaximum.java](SlidingWindowMaximum.java) | 1661bb5 |
+| 2026-11-12 | Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit | [problem](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | [LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.java](LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.java) | pending |

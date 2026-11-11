@@ -98,4 +98,4 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-28 | Sum of Subarray Minimums | [problem](https://leetcode.com/problems/sum-of-subarray-minimums/) | [SumOfSubarrayMinimums.java](SumOfSubarrayMinimums.java) | ada5bb2 |
 | 2026-11-10 | Sum of Subarray Ranges | [problem](https://leetcode.com/problems/sum-of-subarray-ranges/) | [SumOfSubarrayRanges.java](SumOfSubarrayRanges.java) | f9155f9 |
 | 2026-11-12 | Maximum Subarray Min-Product | [problem](https://leetcode.com/problems/maximum-subarray-min-product/) | [MaximumSubarrayMinProduct.java](MaximumSubarrayMinProduct.java) | aadcc88 |
-| 2026-11-12 | Sliding Window Maximum | [problem](https://leetcode.com/problems/sliding-window-maximum/) | [SlidingWindowMaximum.java](SlidingWindowMaximum.java) | pending |
+| 2026-11-12 | Sliding Window Maximum | [problem](https://leetcode.com/problems/sliding-window-maximum/) | [SlidingWindowMaximum.java](SlidingWindowMaximum.java) | 1661bb5 |

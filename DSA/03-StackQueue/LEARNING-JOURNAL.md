@@ -30,6 +30,12 @@ For [Sum of Subarray Ranges](https://leetcode.com/problems/sum-of-subarray-range
 
 **Revisit:** Explain how the asymmetric equality rules assign subarrays with duplicate minima and maxima exactly once.
 
+## Learning note — 2026-11-12
+
+For [Maximum Subarray Min-Product](https://leetcode.com/problems/maximum-subarray-min-product/), the learner used previous smaller-or-equal and next strictly smaller boundaries to find each candidate minimum's span, then used prefix sums to calculate the span sum. They report that the LeetCode submission was accepted. Guidance was needed to use the current index's next boundary, widen the product to `long`, and apply modulo after comparing full products. The saved solution is [MaximumSubarrayMinProduct.java](MaximumSubarrayMinProduct.java).
+
+**Revisit:** Explain why the widest span bounded by smaller values is sufficient when all array values are positive, and how the exclusive prefix-sum indices map to the span.
+
 ## Learning note — 2026-10-26
 
 For [Next Greater Element II](NextGreaterElementII.java), the learner proposed scanning the circular array twice with a stack. After discussion, they corrected the virtual scan bounds and changed the pop condition to remove equal values as well as smaller values, matching the strictly-greater requirement. The learner reports that the solution was accepted on LeetCode. Independent retention has not yet been checked.
@@ -54,7 +60,7 @@ For [Maximum Width Ramp](MaximumWidthRamp.java), the learner first described the
 
 The learner reports having solved the questions listed here. The repository contains a Java implementation for each. Dates and short hashes below come from the commit that added each solution file; they record Git activity and may not be the exact study date. A committed implementation is not, by itself, evidence of independent mastery.
 
-### Stack & Queue — 27
+### Stack & Queue — 28
 
 | Solution commit date | Problem | LeetCode | Repository solution | Commit |
 |---|---|---|---|---|
@@ -85,3 +91,4 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-27 | Maximum Width Ramp | [problem](https://leetcode.com/problems/maximum-width-ramp/) | [MaximumWidthRamp.java](MaximumWidthRamp.java) | 3ad79e2 |
 | 2026-10-28 | Sum of Subarray Minimums | [problem](https://leetcode.com/problems/sum-of-subarray-minimums/) | [SumOfSubarrayMinimums.java](SumOfSubarrayMinimums.java) | ada5bb2 |
 | 2026-11-10 | Sum of Subarray Ranges | [problem](https://leetcode.com/problems/sum-of-subarray-ranges/) | [SumOfSubarrayRanges.java](SumOfSubarrayRanges.java) | f9155f9 |
+| 2026-11-12 | Maximum Subarray Min-Product | [problem](https://leetcode.com/problems/maximum-subarray-min-product/) | [MaximumSubarrayMinProduct.java](MaximumSubarrayMinProduct.java) | pending |

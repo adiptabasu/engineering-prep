@@ -91,4 +91,4 @@ The learner reports having solved the questions listed here. The repository cont
 | 2026-10-27 | Maximum Width Ramp | [problem](https://leetcode.com/problems/maximum-width-ramp/) | [MaximumWidthRamp.java](MaximumWidthRamp.java) | 3ad79e2 |
 | 2026-10-28 | Sum of Subarray Minimums | [problem](https://leetcode.com/problems/sum-of-subarray-minimums/) | [SumOfSubarrayMinimums.java](SumOfSubarrayMinimums.java) | ada5bb2 |
 | 2026-11-10 | Sum of Subarray Ranges | [problem](https://leetcode.com/problems/sum-of-subarray-ranges/) | [SumOfSubarrayRanges.java](SumOfSubarrayRanges.java) | f9155f9 |
-| 2026-11-12 | Maximum Subarray Min-Product | [problem](https://leetcode.com/problems/maximum-subarray-min-product/) | [MaximumSubarrayMinProduct.java](MaximumSubarrayMinProduct.java) | pending |
+| 2026-11-12 | Maximum Subarray Min-Product | [problem](https://leetcode.com/problems/maximum-subarray-min-product/) | [MaximumSubarrayMinProduct.java](MaximumSubarrayMinProduct.java) | aadcc88 |

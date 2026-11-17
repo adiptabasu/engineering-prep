@@ -7,4 +7,5 @@ Detailed learning notes and problem implementation histories are organized by to
 | Arrays & Hashing | [DSA/01-Arrays/LEARNING-JOURNAL.md](DSA/01-Arrays/LEARNING-JOURNAL.md) |
 | Linked Lists | [DSA/02-LinkedLists/LEARNING-JOURNAL.md](DSA/02-LinkedLists/LEARNING-JOURNAL.md) |
 | Stack & Queue | [DSA/03-StackQueue/LEARNING-JOURNAL.md](DSA/03-StackQueue/LEARNING-JOURNAL.md) |
+| Binary Search | [DSA/04-BinarySearch/LEARNING-JOURNAL.md](DSA/04-BinarySearch/LEARNING-JOURNAL.md) |
 | Design problems | [DSA/DSN-Design/LEARNING-JOURNAL.md](DSA/DSN-Design/LEARNING-JOURNAL.md) |

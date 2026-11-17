@@ -9,14 +9,14 @@ Build a strong software engineering foundation through steady, durable learning.
 - Arrays & Hashing: marked complete in the repo (24 problems).
 - Linked Lists: marked complete in the repo (15 problems).
 - Stack & Queue: complete for the current problem set; 30 unique problems are recorded, plus one alternate solution and a boundary-reference file.
-- Next topic: Binary Search.
+- Current topic: Binary Search; the first problem, iterative search in a sorted array, is recorded.
 - Stack & Queue revisit points: independently explain duplicate tie handling in boundary contributions, why monotonic deque candidates can be discarded, and the difference between fixed-size expiry and variable-window shrinking.
 - These records describe practice and learner-reported experience, not independently verified mastery.
 - Use the [central learning journal index](LEARNING-JOURNAL.md) to open the current topic's learning notes and problem history.
 
 ## Next step
 
-Begin the Binary Search section. Continue to re-solve representative Stack & Queue problems from fresh prompts when revisiting the topic.
+Continue Binary Search with another representative problem after re-solving the basic search from a fresh prompt. Continue to re-solve representative Stack & Queue problems from fresh prompts when revisiting that topic.
 
 ## Later sequence
 

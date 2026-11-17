@@ -1,6 +1,6 @@
 # 04 — Binary Search
 
-**Status: In progress — 2 problems recorded**
+**Status: In progress — 3 problems recorded**
 
 This section starts with binary search over a sorted array. The central idea is to use order to rule out half of the remaining candidate indices after each comparison.
 
@@ -12,6 +12,7 @@ If binary search is new to you, begin with the [beginner-friendly notes](notes/R
 |---:|---|---|---|
 | 1 | Binary Search | Inclusive candidate range; discard half using sorted order | [View](./BinarySearch.java) |
 | 2 | Search Insert Position | Lower bound; save a qualifying candidate and continue left | [View](./SearchInsertPosition.java) |
+| 3 | Find First and Last Position of Element in Sorted Array | Lower bound for first match; upper bound minus one for last | [View](./FindFirstAndLastPosition.java) |
 
 The reusable [lower-bound and upper-bound implementations](./BinarySearchBounds.java) are reference helpers, not additional LeetCode problems.
 

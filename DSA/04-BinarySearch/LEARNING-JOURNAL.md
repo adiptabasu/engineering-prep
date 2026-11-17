@@ -12,9 +12,16 @@ For [Search Insert Position](https://leetcode.com/problems/search-insert-positio
 
 **Revisit:** Explain why lower bound uses `>=`, upper bound uses `>`, and why both return `nums.length` when no element qualifies. Given a sorted array with duplicates, find the number of target occurrences by subtracting the two boundaries.
 
+## Learning note — 2026-11-17
+
+For [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/), the learner combined lower bound and upper bound: check that the lower-bound index contains the target, then return that index and `upperBound - 1`. Code review found the boundary logic and the short-circuit absent-target check correct. The learner reports that the LeetCode submission was accepted.
+
+**Revisit:** Explain why the upper bound is one position past the final match, why subtracting one gives the last index, and why the lower-bound result must be checked before indexing the array.
+
 ## Problem implementation history
 
 | Study date | Problem | LeetCode | Repository solution | Result |
 |---|---|---|---|---|
 | 2026-11-17 | Binary Search | [problem](https://leetcode.com/problems/binary-search/) | [BinarySearch.java](BinarySearch.java) | Learner reports accepted |
 | 2026-11-17 | Search Insert Position | [problem](https://leetcode.com/problems/search-insert-position/) | [SearchInsertPosition.java](SearchInsertPosition.java) | Learner reports accepted |
+| 2026-11-17 | Find First and Last Position of Element in Sorted Array | [problem](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [FindFirstAndLastPosition.java](FindFirstAndLastPosition.java) | Learner reports accepted |

@@ -18,6 +18,12 @@ For [Find First and Last Position of Element in Sorted Array](https://leetcode.c
 
 **Revisit:** Explain why the upper bound is one position past the final match, why subtracting one gives the last index, and why the lower-bound result must be checked before indexing the array.
 
+## Learning note — 2026-11-17
+
+For [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/), the learner implemented an inclusive binary search that identifies the sorted half at each midpoint and checks whether the target lies within that half's value range. Code review found the approach correct under LeetCode 33's distinct-value constraint. The learner reports that the submission was accepted.
+
+**Revisit:** Explain why at least one half is sorted when values are distinct, how its endpoint values determine whether the target can be there, and why the duplicate variant can require a different approach.
+
 ## Problem implementation history
 
 | Study date | Problem | LeetCode | Repository solution | Result |
@@ -25,3 +31,4 @@ For [Find First and Last Position of Element in Sorted Array](https://leetcode.c
 | 2026-11-17 | Binary Search | [problem](https://leetcode.com/problems/binary-search/) | [BinarySearch.java](BinarySearch.java) | Learner reports accepted |
 | 2026-11-17 | Search Insert Position | [problem](https://leetcode.com/problems/search-insert-position/) | [SearchInsertPosition.java](SearchInsertPosition.java) | Learner reports accepted |
 | 2026-11-17 | Find First and Last Position of Element in Sorted Array | [problem](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [FindFirstAndLastPosition.java](FindFirstAndLastPosition.java) | Learner reports accepted |
+| 2026-11-17 | Search in Rotated Sorted Array | [problem](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [SearchInRotatedSortedArray.java](SearchInRotatedSortedArray.java) | Learner reports accepted |

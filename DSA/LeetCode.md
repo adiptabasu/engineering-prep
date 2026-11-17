@@ -185,13 +185,15 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 
 30. [**Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit**](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
-## Binary Search — 3 Problems
+## Binary Search — 4 Problems
 
 1. [**Binary Search**](https://leetcode.com/problems/binary-search/)
 
 2. [**Search Insert Position**](https://leetcode.com/problems/search-insert-position/)
 
 3. [**Find First and Last Position of Element in Sorted Array**](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+4. [**Search in Rotated Sorted Array**](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 ## Design — LRU Cache
 

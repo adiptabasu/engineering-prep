@@ -8,10 +8,10 @@ Use this page to pick one focused note. Each pattern has a separate beginner-ori
 | Lower/upper bound | The first position meeting `>=` or `>` | [Bounds](lower-and-upper-bounds.md) |
 | Interval conventions | Help with loop bounds, midpoint choice, or overflow | [Intervals and Midpoints](intervals-and-midpoints.md) |
 | Recursive search | The same exact search written with recursive calls | [Recursion](recursive-binary-search.md) |
-| Rotated sorted array — Preview | Search an array shifted around a pivot | [Rotated Array Search](rotated-sorted-array-search.md) |
+| Rotated sorted array | Search an array shifted around a pivot | [Rotated Array Search](rotated-sorted-array-search.md) |
 | Binary search on answer — Preview | The smallest/largest numeric value that satisfies a check | [Answer Search](binary-search-on-answer.md) |
 | Peak finding — Preview | Find a local maximum using a rising/falling property | [Peak Finding](peak-finding.md) |
 | Matrix search — Preview | Search a matrix with a specific ordering guarantee | [Matrix Search](matrix-search.md) |
 | Exponential search — Preview | Search a sorted source with no known end | [Exponential Search](exponential-search.md) |
 
-The current practice sequence is exact search, lower bound, then [first and last occurrence (LeetCode 34)](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/). Java lower- and upper-bound helpers are in [BinarySearchBounds.java](../BinarySearchBounds.java).
+The current practice sequence covered exact search, boundaries, and rotated arrays. Java lower- and upper-bound helpers are in [BinarySearchBounds.java](../BinarySearchBounds.java).

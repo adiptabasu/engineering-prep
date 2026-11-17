@@ -1,14 +1,29 @@
 # Binary Search notes
 
-These notes start from the idea of an ordered search space, then build from exact search to lower and upper boundaries. The examples use a sorted array and an inclusive range of candidate indices.
+Each note focuses on one Binary Search concept and builds from the fundamentals. The [pattern map](binary-search-patterns.md) is a short directory; open the specific concept note when you need more detail.
 
 ## Suggested reading order
 
-1. Read [Binary search fundamentals](binary-search-fundamentals.md) for the sorted-order property, candidate range, midpoint decisions, a worked trace, and common boundary mistakes.
-2. Read [Lower Bound and Upper Bound](lower-and-upper-bounds.md) to learn how binary search finds the first index meeting a condition and how those boundaries handle duplicates.
-3. Use the [Binary Search Pattern Reference](binary-search-patterns.md) as a map of common variants, including rotated arrays and binary search on an answer. Sections marked preview introduce patterns to study later.
-4. Re-solve [LeetCode 704: Binary Search](../BinarySearch.java) and [LeetCode 35: Search Insert Position](../SearchInsertPosition.java) from their prompts. Explain why each comparison lets you discard half the remaining indices.
-5. Use [BinarySearchBounds.java](../BinarySearchBounds.java) as a reference after attempting both boundary loops yourself.
+1. Start with [Binary Search Fundamentals](binary-search-fundamentals.md): why sorted order lets us discard candidates, the inclusive range, and exact search.
+2. Read [Lower Bound and Upper Bound](lower-and-upper-bounds.md), then attempt [LeetCode 35: Search Insert Position](../SearchInsertPosition.java) from its prompt.
+3. Read [Intervals and Midpoints](intervals-and-midpoints.md) when you need to compare inclusive and half-open ranges or choose a safe midpoint.
+4. Use [Recursive Binary Search](recursive-binary-search.md) to see the same search expressed with recursive calls.
+5. Apply both boundaries in [LeetCode 34: Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/).
+6. Treat the [pattern map](binary-search-patterns.md) as a directory to the separate preview notes for rotated arrays, answer search, peaks, matrices, and exponential search.
+
+## Concept notes
+
+| Note | Concept |
+|---|---|
+| [Binary Search Fundamentals](binary-search-fundamentals.md) | Exact search in a sorted array |
+| [Lower Bound and Upper Bound](lower-and-upper-bounds.md) | First qualifying positions and duplicate ranges |
+| [Intervals and Midpoints](intervals-and-midpoints.md) | Inclusive/half-open ranges and overflow-safe midpoint choices |
+| [Recursive Binary Search](recursive-binary-search.md) | Base case, recursive progress, and stack space |
+| [Rotated Sorted Array Search](rotated-sorted-array-search.md) | Recognize the sorted half |
+| [Binary Search on an Answer](binary-search-on-answer.md) | Find a minimum or maximum feasible value |
+| [Peak Finding](peak-finding.md) | Follow a rising or falling slope |
+| [Matrix Search](matrix-search.md) | Choose a method based on matrix ordering |
+| [Exponential Search](exponential-search.md) | Bracket a target when the upper bound is unknown |
 
 ## Re-solving checklist
 

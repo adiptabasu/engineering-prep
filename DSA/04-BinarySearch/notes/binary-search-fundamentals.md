@@ -101,41 +101,13 @@ while (low <= high) {
 return -1;
 ```
 
-## 7. Recursive binary search
+## 7. Complexity
 
-Binary search can also be written recursively. Each call receives the current inclusive candidate range. A call either finds the target, chooses one smaller range, or discovers that the range is empty.
+If there are `n` candidates, one comparison leaves at most about `n / 2`. After another comparison, at most about `n / 4` remain. The number of halvings needed to reduce the range to zero or one is proportional to `log₂(n)`, so the running time is **O(log n)**.
 
-```java
-public int searchRecursive(int[] nums, int target) {
-    return searchRange(nums, target, 0, nums.length - 1);
-}
+The iterative version keeps only a few index variables, so it uses **O(1)** auxiliary space.
 
-private int searchRange(int[] nums, int target, int low, int high) {
-    if (low > high) {
-        return -1;
-    }
-
-    int mid = low + (high - low) / 2;
-
-    if (nums[mid] == target) {
-        return mid;
-    } else if (nums[mid] < target) {
-        return searchRange(nums, target, mid + 1, high);
-    } else {
-        return searchRange(nums, target, low, mid - 1);
-    }
-}
-```
-
-The base case `low > high` is the recursive version of the iterative loop stopping after the candidate range becomes empty. Each recursive call uses the same midpoint and range rules as the iterative version; it simply passes the smaller range to another call instead of updating local variables.
-
-## 8. Complexity
-
-If there are `n` candidates, one comparison leaves at most about `n / 2`. After another comparison, at most about `n / 4` remain. The number of halvings needed to reduce the range to zero or one is proportional to `log₂(n)`, so both versions take **O(log n)** time.
-
-The iterative version uses **O(1)** auxiliary space. The recursive version uses **O(log n)** call-stack space because each recursive call waits for the next call to return.
-
-## 9. Common mistakes
+## 8. Common mistakes
 
 - **Using binary search on data without the required ordering.** The comparison must let us rule out a whole side of the candidate range.
 - **Mixing range conventions.** This template treats both `low` and `high` as candidates. Keep `low <= high` and initialize `high` to `nums.length - 1`.
@@ -144,10 +116,10 @@ The iterative version uses **O(1)** auxiliary space. The recursive version uses 
 - **Returning a value where an index is required.** For a search-by-index problem, return `mid` when the target is found.
 - **Forgetting the absent case.** Once `low > high`, no candidate remains; return the problem's not-found result.
 
-## 10. Review prompts
+## 9. Review prompts
 
 1. Why does a sorted array let a comparison discard half of the candidates?
 2. What exactly do `low` and `high` mean in the inclusive template?
 3. Why do we exclude `mid` after checking it?
 4. What does `low > high` tell us?
-5. Why does the iterative version use constant extra space, while the recursive version uses logarithmic call-stack space?
+5. Why does the search take logarithmic time while using constant extra space?

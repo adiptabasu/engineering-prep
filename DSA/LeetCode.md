@@ -185,9 +185,11 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 
 30. [**Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit**](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
-## Binary Search — 1 Problem
+## Binary Search — 2 Problems
 
 1. [**Binary Search**](https://leetcode.com/problems/binary-search/)
+
+2. [**Search Insert Position**](https://leetcode.com/problems/search-insert-position/)
 
 ## Design — LRU Cache
 

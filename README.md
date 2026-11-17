@@ -279,7 +279,7 @@ The LRU Cache implementation is in [`DSA/DSN-Design/LRUCache.java`](DSA/DSN-Desi
 
 ### Binary Search
 
-The fourth section has started with iterative binary search over a sorted array. See the [Binary Search revision guide](DSA/04-BinarySearch/README.md) and its [beginner-friendly notes](DSA/04-BinarySearch/notes/README.md). The first solution is recorded as practice; it does not by itself establish independent mastery.
+The fourth section has started with exact search in a sorted array and Search Insert Position using lower bound. See the [Binary Search revision guide](DSA/04-BinarySearch/README.md) and its [beginner-friendly notes](DSA/04-BinarySearch/notes/README.md). The recorded solutions describe practice and learner-reported acceptance; they do not by themselves establish independent mastery.
 
 The progress indicators represent the current state of the learning journey and may change as topics are revisited at greater depth.
 

@@ -80,6 +80,8 @@ if (nums[low] == nums[mid] && nums[mid] == nums[high]) {
 
 This is safe because the midpoint has already been checked and the equal endpoints have the same value. However, shrinking one item at a time can take `O(n)` time in the worst case. With distinct values, the search is `O(log n)`.
 
+The duplicate-aware implementation is saved in [Search in Rotated Sorted Array II](../SearchInRotatedSortedArrayII.java). Compare its ambiguity case with the distinct-value implementation in [Search in Rotated Sorted Array](../SearchInRotatedSortedArray.java).
+
 ## 6. Complexity and assumptions
 
 - **Distinct values:** `O(log n)` time and `O(1)` extra space.

@@ -9,7 +9,7 @@ Each note focuses on one Binary Search concept and builds from the fundamentals.
 3. Read [Intervals and Midpoints](intervals-and-midpoints.md) when you need to compare inclusive and half-open ranges or choose a safe midpoint.
 4. Use [Recursive Binary Search](recursive-binary-search.md) to see the same search expressed with recursive calls.
 5. Apply both boundaries in [LeetCode 34: Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/).
-6. Read the [rotated-array search note](rotated-sorted-array-search.md), then attempt [LeetCode 33](https://leetcode.com/problems/search-in-rotated-sorted-array/) from a fresh prompt.
+6. Read the [rotated-array search note](rotated-sorted-array-search.md), then compare it with [LeetCode 81](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) where duplicates can hide which half is sorted.
 7. Treat the [pattern map](binary-search-patterns.md) as a directory to the preview notes for answer search, peaks, matrices, and exponential search.
 
 ## Concept notes

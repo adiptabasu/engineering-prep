@@ -10,7 +10,8 @@ Each note focuses on one Binary Search concept and builds from the fundamentals.
 4. Use [Recursive Binary Search](recursive-binary-search.md) to see the same search expressed with recursive calls.
 5. Apply both boundaries in [LeetCode 34: Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/).
 6. Read the [rotated-array search note](rotated-sorted-array-search.md), then compare it with [LeetCode 81](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) where duplicates can hide which half is sorted.
-7. Treat the [pattern map](binary-search-patterns.md) as a directory to the preview notes for answer search, peaks, matrices, and exponential search.
+7. Read [Finding the Minimum in a Rotated Array](minimum-in-rotated-array.md) for the pivot/minimum variant.
+8. Treat the [pattern map](binary-search-patterns.md) as a directory to the preview notes for answer search, peaks, matrices, and exponential search.
 
 ## Concept notes
 
@@ -21,6 +22,7 @@ Each note focuses on one Binary Search concept and builds from the fundamentals.
 | [Intervals and Midpoints](intervals-and-midpoints.md) | Inclusive/half-open ranges and overflow-safe midpoint choices |
 | [Recursive Binary Search](recursive-binary-search.md) | Base case, recursive progress, and stack space |
 | [Rotated Sorted Array Search](rotated-sorted-array-search.md) | Recognize the sorted half |
+| [Minimum in a Rotated Array](minimum-in-rotated-array.md) | Find the rotation point/minimum using a shrinking range or tracked candidates |
 | [Binary Search on an Answer](binary-search-on-answer.md) | Find a minimum or maximum feasible value |
 | [Peak Finding](peak-finding.md) | Follow a rising or falling slope |
 | [Matrix Search](matrix-search.md) | Choose a method based on matrix ordering |

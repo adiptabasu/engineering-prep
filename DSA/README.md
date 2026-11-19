@@ -9,7 +9,7 @@ This directory contains the DSA learning progression, implementations, revision 
 | 01 — Arrays & Hashing | Complete | 24 / 24 |
 | 02 — Linked Lists | Complete | 15 / 15 |
 | 03 — Stack & Queue | Complete for current problem set | 30 problems recorded |
-| 04 — Binary Search | In progress | 5 problems recorded |
+| 04 — Binary Search | In progress | 6 problems recorded |
 | 05 — Trees | Planned | — |
 | 06 — Heap / Priority Queue | Planned | — |
 | 07 — Graphs | Planned | — |
@@ -71,7 +71,7 @@ The third section has 30 unique problem implementations recorded. It covers stac
 
 ## In progress: Binary Search
 
-The fourth section has five problems recorded: exact search, lower and upper bounds, and rotated-array search with distinct and duplicate values. See [`04-BinarySearch/README.md`](04-BinarySearch/README.md) for the problem list and [`04-BinarySearch/notes/README.md`](04-BinarySearch/notes/README.md) for the concept-by-concept notes. The learner reports all five submissions were accepted; continued independent practice will build on these starting points.
+The fourth section has six problems recorded: exact search, lower and upper bounds, rotated-array search with distinct and duplicate values, and finding the minimum in a rotated array. See [`04-BinarySearch/README.md`](04-BinarySearch/README.md) for the problem list and [`04-BinarySearch/notes/README.md`](04-BinarySearch/notes/README.md) for the concept-by-concept notes. The learner reports all six submissions were accepted; continued independent practice will build on these starting points.
 
 ## Git Practice
 

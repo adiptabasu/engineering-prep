@@ -82,6 +82,8 @@ This is safe because the midpoint has already been checked and the equal endpoin
 
 The duplicate-aware implementation is saved in [Search in Rotated Sorted Array II](../SearchInRotatedSortedArrayII.java). Compare its ambiguity case with the distinct-value implementation in [Search in Rotated Sorted Array](../SearchInRotatedSortedArray.java).
 
+For the related problem of locating the minimum at the rotation point, see [Find the Minimum in a Rotated Sorted Array](minimum-in-rotated-array.md).
+
 ## 6. Complexity and assumptions
 
 - **Distinct values:** `O(log n)` time and `O(1)` extra space.

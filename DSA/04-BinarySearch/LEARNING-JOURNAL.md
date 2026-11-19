@@ -30,6 +30,12 @@ For [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-
 
 **Revisit:** Explain why equal endpoints can be removed after checking `mid`, why duplicates may force one-step shrinking and `O(n)` worst-case time, and why the distinct-value version can guarantee `O(log n)`.
 
+## Learning note — 2026-11-19
+
+For [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/), the learner used `nums[low] <= nums[mid]` to identify a sorted left segment, recorded its first value, and continued right; otherwise they recorded `nums[mid]` and continued left. Code review found this candidate-tracking approach correct for the problem's non-empty, distinct-value input. We also discussed a shorter range-only approach based on comparing `nums[mid]` with `nums[high]`; both approaches are `O(log n)`. The learner reports that the original submission was accepted.
+
+**Revisit:** Explain why the tracked minimum must survive after its index is removed from the active interval, and derive the range-only update when `nums[mid]` is greater than `nums[high]`.
+
 ## Problem implementation history
 
 | Study date | Problem | LeetCode | Repository solution | Result |
@@ -39,3 +45,4 @@ For [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-
 | 2026-11-17 | Find First and Last Position of Element in Sorted Array | [problem](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [FindFirstAndLastPosition.java](FindFirstAndLastPosition.java) | Learner reports accepted |
 | 2026-11-17 | Search in Rotated Sorted Array | [problem](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [SearchInRotatedSortedArray.java](SearchInRotatedSortedArray.java) | Learner reports accepted |
 | 2026-11-18 | Search in Rotated Sorted Array II | [problem](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [SearchInRotatedSortedArrayII.java](SearchInRotatedSortedArrayII.java) | Learner reports accepted |
+| 2026-11-19 | Find Minimum in Rotated Sorted Array | [problem](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [FindMinimumInRotatedSortedArray.java](FindMinimumInRotatedSortedArray.java) | Learner reports accepted |

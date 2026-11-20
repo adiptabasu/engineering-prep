@@ -36,6 +36,12 @@ For [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-mi
 
 **Revisit:** Explain why the tracked minimum must survive after its index is removed from the active interval, and derive the range-only update when `nums[mid]` is greater than `nums[high]`.
 
+## Learning note — 2026-11-20
+
+For [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/), the learner aligned `mid` to an even index, compared that index with its neighbor, skipped an intact pair to the right, and kept `mid` as a candidate after a mismatch. Code review found the approach correct. The learner reports that LeetCode accepted the submission.
+
+**Revisit:** Explain why pair starts are even before the singleton and odd after it, and how the mismatch tells the search which half still contains the singleton.
+
 ## Problem implementation history
 
 | Study date | Problem | LeetCode | Repository solution | Result |
@@ -46,3 +52,4 @@ For [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-mi
 | 2026-11-17 | Search in Rotated Sorted Array | [problem](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [SearchInRotatedSortedArray.java](SearchInRotatedSortedArray.java) | Learner reports accepted |
 | 2026-11-18 | Search in Rotated Sorted Array II | [problem](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [SearchInRotatedSortedArrayII.java](SearchInRotatedSortedArrayII.java) | Learner reports accepted |
 | 2026-11-19 | Find Minimum in Rotated Sorted Array | [problem](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [FindMinimumInRotatedSortedArray.java](FindMinimumInRotatedSortedArray.java) | Learner reports accepted |
+| 2026-11-20 | Single Element in a Sorted Array | [problem](https://leetcode.com/problems/single-element-in-a-sorted-array/) | [SingleElementInSortedArray.java](SingleElementInSortedArray.java) | Learner reports accepted |

@@ -1,6 +1,6 @@
 # 04 — Binary Search
 
-**Status: In progress — 6 problems recorded**
+**Status: In progress — 7 problems recorded**
 
 This section starts with binary search over a sorted array. The central idea is to use order to rule out half of the remaining candidate indices after each comparison.
 
@@ -16,6 +16,7 @@ If binary search is new to you, begin with the [beginner-friendly notes](notes/R
 | 4 | Search in Rotated Sorted Array | Identify the sorted half and check whether the target falls within it | [View](./SearchInRotatedSortedArray.java) |
 | 5 | Search in Rotated Sorted Array II | Shrink equal endpoints when duplicates hide the sorted half | [View](./SearchInRotatedSortedArrayII.java) |
 | 6 | Find Minimum in Rotated Sorted Array | Narrow the range around the rotation point, or track minimum candidates | [View](./FindMinimumInRotatedSortedArray.java) |
+| 7 | Single Element in a Sorted Array | Use the pair-index alignment change around the singleton | [View](./SingleElementInSortedArray.java) |
 
 The reusable [lower-bound and upper-bound implementations](./BinarySearchBounds.java) are reference helpers, not additional LeetCode problems.
 

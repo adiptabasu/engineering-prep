@@ -42,6 +42,12 @@ For [Single Element in a Sorted Array](https://leetcode.com/problems/single-elem
 
 **Revisit:** Explain why pair starts are even before the singleton and odd after it, and how the mismatch tells the search which half still contains the singleton.
 
+## Learning note — 2026-11-20
+
+For [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/), the learner adapted candidate tracking to duplicate values. When `nums[low]`, `nums[mid]`, and `nums[high]` are equal, the code compares both endpoints with the best minimum candidate before shrinking both ends; otherwise it narrows using the sorted-left-segment check. The learner reports that LeetCode accepted the submission.
+
+**Revisit:** Explain why duplicate endpoints can hide which side contains the rotation, why both endpoints must be considered before shrinking, and why this ambiguity can make the worst-case runtime O(n).
+
 ## Problem implementation history
 
 | Study date | Problem | LeetCode | Repository solution | Result |
@@ -53,3 +59,4 @@ For [Single Element in a Sorted Array](https://leetcode.com/problems/single-elem
 | 2026-11-18 | Search in Rotated Sorted Array II | [problem](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | [SearchInRotatedSortedArrayII.java](SearchInRotatedSortedArrayII.java) | Learner reports accepted |
 | 2026-11-19 | Find Minimum in Rotated Sorted Array | [problem](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [FindMinimumInRotatedSortedArray.java](FindMinimumInRotatedSortedArray.java) | Learner reports accepted |
 | 2026-11-20 | Single Element in a Sorted Array | [problem](https://leetcode.com/problems/single-element-in-a-sorted-array/) | [SingleElementInSortedArray.java](SingleElementInSortedArray.java) | Learner reports accepted |
+| 2026-11-20 | Find Minimum in Rotated Sorted Array II | [problem](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | [FindMinimumInRotatedSortedArrayII.java](FindMinimumInRotatedSortedArrayII.java) | Learner reports accepted |

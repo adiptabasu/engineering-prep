@@ -11,7 +11,7 @@ Rotated:  [4, 5, 6, 7, 0, 1, 2]
 
 The minimum is at the rotation point, where the values drop from a large value back to a small one. The whole array is not sorted, but each side of that drop is sorted.
 
-LeetCode 153 guarantees a non-empty array with distinct values. Duplicates change the reasoning and are not covered by these implementations.
+LeetCode 153 guarantees a non-empty array with distinct values. LeetCode 154 allows duplicates; the duplicate case needs an extra step because equal endpoint values can hide which side contains the rotation.
 
 ## 2. Candidate-range approach
 
@@ -94,21 +94,30 @@ The answer-tracking method also works: the left segment is sorted each time, so 
 
 Both approaches take **O(log n)** time and **O(1)** extra space. The candidate-range approach is shorter because the active range itself always contains the answer. The tracked-candidate approach explicitly remembers a minimum from the range it discards. The two approaches have the same asymptotic complexity; one is not a faster growth rate than the other.
 
-## 7. Common mistakes
+## 7. When duplicates are allowed
+
+If `nums[low] == nums[mid] == nums[high]`, these three equal values do not reveal which half contains the rotation. Before shrinking the range, compare both endpoints with the best minimum candidate. Then increment `low` and decrement `high`. Saving both first matters because either endpoint could hold a minimum that would be lost when removed.
+
+When the three values are not all equal, the sorted-left-segment reasoning can still guide the search. See the commented [LeetCode 154 implementation](../FindMinimumInRotatedSortedArrayII.java) for candidate tracking. Duplicates can force the algorithm to shrink only a little at a time, so the worst-case time becomes **O(n)**, although many inputs still take **O(log n)**.
+
+This solves for the minimum **value**. For the distinct-value rotation-count reference, see [Rotation Count](rotation-count.md).
+
+## 8. Common mistakes
 
 - **Using `low <= high` with the range-only method and returning `nums[low]` afterward.** The range method is written for `low < high`, preserving at least one candidate and stopping when the bounds meet.
 - **Moving `high` to `mid - 1` in the range-only method.** `mid` may itself be the minimum, so keep it with `high = mid`.
 - **Assuming the minimum is always at index zero or at the midpoint.** Use the ordered sides to narrow the candidate range.
-- **Ignoring duplicate values.** Equality may hide the rotation point; use the separate duplicate variant when the constraints allow duplicates.
+- **Ignoring duplicate values.** Equality may hide the rotation point; compare and save both endpoints before shrinking in the duplicate variant.
 - **Assuming one implementation is asymptotically faster.** Both standard approaches are logarithmic for distinct values.
 
-## 8. Review prompts
+## 9. Review prompts
 
 1. Why does `nums[mid] > nums[high]` put the minimum to the right of `mid`?
 2. Why does the other case keep `mid` rather than discard it?
 3. What does `low == high` mean?
 4. In the `currentMin` version, why must we preserve candidates from discarded segments?
-5. What changes when duplicates are allowed?
+5. When `nums[low] == nums[mid] == nums[high]`, why must both endpoints be considered before shrinking?
+6. Why can duplicates make the worst-case running time linear?
 
 ## Related problems
 

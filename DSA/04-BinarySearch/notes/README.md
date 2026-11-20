@@ -12,7 +12,8 @@ Each note focuses on one Binary Search concept and builds from the fundamentals.
 6. Read the [rotated-array search note](rotated-sorted-array-search.md), then compare it with [LeetCode 81](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) where duplicates can hide which half is sorted.
 7. Read [Finding the Minimum in a Rotated Array](minimum-in-rotated-array.md) for the pivot/minimum variant.
 8. Read [Single Element in a Sorted Array](single-element-in-sorted-array.md) for pair alignment around a singleton.
-9. Treat the [pattern map](binary-search-patterns.md) as a directory to the preview notes for answer search, peaks, matrices, and exponential search.
+9. Read [Rotation Count](rotation-count.md) for why the minimum's index gives the rotation count when values are distinct.
+10. Treat the [pattern map](binary-search-patterns.md) as a directory to the preview notes for answer search, peaks, matrices, and exponential search.
 
 ## Concept notes
 
@@ -25,6 +26,7 @@ Each note focuses on one Binary Search concept and builds from the fundamentals.
 | [Rotated Sorted Array Search](rotated-sorted-array-search.md) | Recognize the sorted half |
 | [Minimum in a Rotated Array](minimum-in-rotated-array.md) | Find the rotation point/minimum using a shrinking range or tracked candidates |
 | [Single Element in a Sorted Array](single-element-in-sorted-array.md) | Use the pair-alignment shift around the singleton |
+| [Rotation Count](rotation-count.md) | Return the minimum's index as the number of right rotations for distinct values |
 | [Binary Search on an Answer](binary-search-on-answer.md) | Find a minimum or maximum feasible value |
 | [Peak Finding](peak-finding.md) | Follow a rising or falling slope |
 | [Matrix Search](matrix-search.md) | Choose a method based on matrix ordering |

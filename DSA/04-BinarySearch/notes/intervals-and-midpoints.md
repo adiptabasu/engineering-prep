@@ -4,7 +4,7 @@
 
 `low` and `high` describe a search interval. The loop condition and the way the bounds move depend on whether both ends are candidates or the right end is excluded. Mixing rules from the two conventions is a common source of infinite loops and skipped indices.
 
-The current LeetCode 704 and 35 solutions use an inclusive range. This note also shows the half-open form because it is common for boundary searches.
+The current solutions and the examples in this learning path favor inclusive ranges and `while (low <= high)`. This note still explains half-open ranges because they are common in other code and libraries; their loop condition is necessarily different, so do not mix the two conventions.
 
 ## 2. Inclusive range: `[low, high]`
 
@@ -30,32 +30,36 @@ When the loop stops, `low > high`; no candidate remains. See [Binary Search Fund
 
 For lower bound in this convention, use an answer variable because `nums.length` can be the boundary even though it is not an array index. If `nums[mid] >= target`, save `mid` and move left with `high = mid - 1`; otherwise move right.
 
-## 3. Half-open range: `[low, high)`
+## 3. Lower bound with the inclusive range
 
-The left endpoint is included and the right endpoint is excluded. For a lower-bound search, initialize `low = 0`, `high = nums.length`. The value `nums.length` is allowed as a result boundary, but never read as an array element.
+For lower bound, save the first index whose value is at least the target. The answer may be `nums.length`, meaning no element qualifies. Use `ans` because this end boundary is not a valid index to read.
 
 ```java
 int low = 0;
-int high = nums.length;
+int high = nums.length - 1;
+int ans = nums.length;
 
-while (low < high) {
+while (low <= high) {
     int mid = low + (high - low) / 2;
 
-    if (nums[mid] < target) {
-        low = mid + 1;
+    if (nums[mid] >= target) {
+        ans = mid;
+        high = mid - 1;
     } else {
-        high = mid;
+        low = mid + 1;
     }
 }
 
-return low;
+return ans;
 ```
 
-Here the active indices are from `low` through `high - 1`. Since `low < high` before computing `mid`, the midpoint is less than `high`, and therefore is a valid array index. If `nums[mid]` is too small, exclude it with `low = mid + 1`. Otherwise keep the possible boundary at `mid` by setting `high = mid`.
+When `nums[mid] >= target`, save it as a possible answer and continue left because an earlier qualifying value may exist. Otherwise, move right. When the loop ends, `ans` is the lower-bound index, or `nums.length` if no value qualifies. This uses the same inclusive loop pattern as the other solution examples.
 
-The loop stops at `low == high`. That position is the lower bound, including the possible end boundary `nums.length`.
+## 4. Half-open range: `[low, high)`
 
-## 4. Compare the update rules
+The left endpoint is included and the right endpoint is excluded. A half-open lower-bound search initializes `low = 0`, `high = nums.length`; `nums.length` is a valid boundary but never an index to read. This convention naturally continues while `low < high` and stops when the two bounds meet. The shorter loop is not interchangeable with the inclusive loop above: it relies on a different interval invariant and uses `high = mid` to keep `mid` as a possible answer.
+
+## 5. Compare the update rules
 
 | Question | Inclusive `[low, high]` | Half-open `[low, high)` lower bound |
 |---|---|---|
@@ -67,7 +71,7 @@ The loop stops at `low == high`. That position is the lower bound, including the
 
 Both can find the same lower bound. Pick one convention for a given implementation and keep its initialization, condition, and updates together.
 
-## 5. Midpoint overflow
+## 6. Midpoint overflow
 
 The expression `(low + high) / 2` can overflow before division if `low + high` exceeds the largest `int`. For nonnegative array indices with `low <= high`, use:
 
@@ -85,7 +89,7 @@ The cast is safe because the average of two valid `int` indices is also a valid 
 
 Do not use `low - ((high - low) / 2)` for an ascending interval: subtracting the distance moves left of `low`, not between `low` and `high`.
 
-## 6. Lower middle and upper middle
+## 7. Lower middle and upper middle
 
 `low + (high - low) / 2` chooses the lower middle when there are two middle candidates. That is usually right for shrinking an inclusive exact-search range or a half-open lower-bound interval.
 
@@ -100,7 +104,7 @@ This is the ceiling of half the distance. The simpler `low + (high - low + 1) / 
 
 Do not switch to an upper middle just because it exists. First determine which midpoint is compatible with the update rules and needed progress.
 
-## 7. Common failure patterns
+## 8. Common failure patterns
 
 - Using `low < high` with an inclusive range can skip the last candidate.
 - Using `low <= high` with a half-open range can inspect the excluded endpoint.
@@ -109,7 +113,7 @@ Do not switch to an upper middle just because it exists. First determine which m
 - Calculating the midpoint as `(low + high) / 2` can overflow.
 - Moving a bound without saying whether `mid` remains a possible answer makes the invariant hard to maintain.
 
-## 8. Review prompts
+## 9. Review prompts
 
 1. Which indices are included in `[low, high]`? Which are included in `[low, high)`?
 2. Why do exact search and half-open lower bound use different updates for a qualifying midpoint?

@@ -48,6 +48,12 @@ For [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find
 
 **Revisit:** Explain why duplicate endpoints can hide which side contains the rotation, why both endpoints must be considered before shrinking, and why this ambiguity can make the worst-case runtime O(n).
 
+## Learning note — 2026-11-21
+
+For [Find Peak Element](https://leetcode.com/problems/find-peak-element/), the learner checked the endpoints first, then searched the interior by comparing a midpoint with its neighbors and following the rising or falling slope. Code review caught and corrected the right-endpoint return index (`high` rather than `low`). The learner reports that LeetCode accepted the solution.
+
+**Revisit:** Explain why either slope direction guarantees a peak in the retained half, and why the endpoint checks make neighbor accesses safe in the interior search.
+
 ## Problem implementation history
 
 | Study date | Problem | LeetCode | Repository solution | Result |
@@ -60,3 +66,4 @@ For [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find
 | 2026-11-19 | Find Minimum in Rotated Sorted Array | [problem](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [FindMinimumInRotatedSortedArray.java](FindMinimumInRotatedSortedArray.java) | Learner reports accepted |
 | 2026-11-20 | Single Element in a Sorted Array | [problem](https://leetcode.com/problems/single-element-in-a-sorted-array/) | [SingleElementInSortedArray.java](SingleElementInSortedArray.java) | Learner reports accepted |
 | 2026-11-20 | Find Minimum in Rotated Sorted Array II | [problem](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | [FindMinimumInRotatedSortedArrayII.java](FindMinimumInRotatedSortedArrayII.java) | Learner reports accepted |
+| 2026-11-21 | Find Peak Element | [problem](https://leetcode.com/problems/find-peak-element/) | [FindPeakElement.java](FindPeakElement.java) | Learner reports accepted |

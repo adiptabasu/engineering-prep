@@ -185,7 +185,7 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 
 30. [**Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit**](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
-## Binary Search — 9 Problems
+## Binary Search — 10 Problems
 
 1. [**Binary Search**](https://leetcode.com/problems/binary-search/)
 
@@ -204,6 +204,8 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 8. [**Find Minimum in Rotated Sorted Array II**](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)
 
 9. [**Find Peak Element**](https://leetcode.com/problems/find-peak-element/)
+
+10. [**Sqrt(x)**](https://leetcode.com/problems/sqrtx/)
 
 ## Design — LRU Cache
 

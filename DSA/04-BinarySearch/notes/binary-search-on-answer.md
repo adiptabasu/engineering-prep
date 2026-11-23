@@ -104,6 +104,34 @@ Bounds should come from the problem, not arbitrary guesses. Examples:
 
 Use `long` when sums, products, coordinate spans, or candidate times can exceed `int`. The midpoint also needs to use the same wide type.
 
+## Integer square root: largest feasible candidate
+
+For `Sqrt(x)`, the candidate answer is an integer root `r`. The predicate `r * r <= x` changes once as `r` increases: smaller candidates are feasible, larger ones are too large. We want the **largest feasible** root, so when a midpoint works, save it and continue searching right.
+
+```java
+public int mySqrt(int x) {
+    int low = 1;
+    int high = x;
+    int answer = 0;
+
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        long square = (long) mid * mid;
+
+        if (square <= x) {
+            answer = mid;
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+
+    return answer;
+}
+```
+
+The cast must come before multiplication. Writing `(long) (mid * mid)` would cast only after the `int` product might already have overflowed. For `x == 0`, the initial interval is empty, so the default answer `0` is returned. See the saved [LeetCode 69 implementation](../SqrtX.java).
+
 ## 7. Complexity
 
 If there are `R` possible integer answers, binary search checks `O(log R)` candidates. If `feasible(mid)` takes `C` time, total time is **O(C log R)**. The search loop itself uses **O(1)** extra space, not counting space used by the feasibility check.
@@ -123,6 +151,7 @@ This pattern is a candidate when the prompt asks for a minimum or maximum numeri
 
 ## Related problems
 
+- [LeetCode 69 — Sqrt(x)](https://leetcode.com/problems/sqrtx/)
 - [LeetCode 1011 — Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
 - [LeetCode 875 — Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)
 - [LeetCode 1552 — Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/)

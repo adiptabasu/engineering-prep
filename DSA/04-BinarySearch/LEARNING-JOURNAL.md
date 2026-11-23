@@ -54,6 +54,12 @@ For [Find Peak Element](https://leetcode.com/problems/find-peak-element/), the l
 
 **Revisit:** Explain why either slope direction guarantees a peak in the retained half, and why the endpoint checks make neighbor accesses safe in the interior search.
 
+## Learning note — 2026-11-23
+
+For [Sqrt(x)](https://leetcode.com/problems/sqrtx/), the learner used an inclusive binary search over possible roots and saved the largest candidate whose square is at most `x`. Code review caught that the multiplication must be widened before it happens, using `(long) mid * mid`; the learner reports that the corrected submission was accepted.
+
+**Revisit:** Explain why valid roots form a prefix of the candidate range, why a valid midpoint should be saved before searching right, and why the cast must happen before multiplication.
+
 ## Problem implementation history
 
 | Study date | Problem | LeetCode | Repository solution | Result |
@@ -67,3 +73,4 @@ For [Find Peak Element](https://leetcode.com/problems/find-peak-element/), the l
 | 2026-11-20 | Single Element in a Sorted Array | [problem](https://leetcode.com/problems/single-element-in-a-sorted-array/) | [SingleElementInSortedArray.java](SingleElementInSortedArray.java) | Learner reports accepted |
 | 2026-11-20 | Find Minimum in Rotated Sorted Array II | [problem](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | [FindMinimumInRotatedSortedArrayII.java](FindMinimumInRotatedSortedArrayII.java) | Learner reports accepted |
 | 2026-11-21 | Find Peak Element | [problem](https://leetcode.com/problems/find-peak-element/) | [FindPeakElement.java](FindPeakElement.java) | Learner reports accepted |
+| 2026-11-23 | Sqrt(x) | [problem](https://leetcode.com/problems/sqrtx/) | [SqrtX.java](SqrtX.java) | Learner reports accepted |

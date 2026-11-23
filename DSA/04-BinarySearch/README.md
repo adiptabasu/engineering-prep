@@ -1,6 +1,6 @@
 # 04 — Binary Search
 
-**Status: In progress — 9 problems recorded**
+**Status: In progress — 10 problems recorded**
 
 This section starts with binary search over a sorted array. The central idea is to use order to rule out half of the remaining candidate indices after each comparison.
 
@@ -19,6 +19,7 @@ If binary search is new to you, begin with the [beginner-friendly notes](notes/R
 | 7 | Single Element in a Sorted Array | Use the pair-index alignment change around the singleton | [View](./SingleElementInSortedArray.java) |
 | 8 | Find Minimum in Rotated Sorted Array II | Track endpoint candidates when duplicates hide the rotation | [View](./FindMinimumInRotatedSortedArrayII.java) |
 | 9 | Find Peak Element | Check endpoints, then follow the rising or falling slope | [View](./FindPeakElement.java) |
+| 10 | Sqrt(x) | Search for the largest integer whose square is at most `x` | [View](./SqrtX.java) |
 
 The reusable [lower-bound and upper-bound implementations](./BinarySearchBounds.java) are reference helpers, not additional LeetCode problems.
 

@@ -49,6 +49,14 @@ return answer;
 
 The saved `answer` is the best feasible value found so far. The upper bound should be known feasible; otherwise a no-solution case needs explicit handling.
 
+### Example: Koko Eating Bananas
+
+Search the integer speed from `1` through the largest pile. For a candidate speed `k`, each pile needs `pile / k` full hours, plus one more hour when `pile % k != 0`. Add those hours across piles; if the total exceeds `h`, this speed is too slow.
+
+For `[3, 6, 7, 11]` at speed `4`, the piles take `1 + 2 + 2 + 3 = 8` hours. At speed `3`, they take `1 + 2 + 3 + 4 = 10` hours, so speed `3` is infeasible for an 8-hour limit while speed `4` is feasible. Faster speeds stay feasible, making the hours check monotone.
+
+The largest-pile speed takes one hour per pile, so it is feasible under the problem guarantee `h >= piles.length`. The hours check is `O(n)`, giving total complexity `O(n log M)` for largest pile size `M`. See the saved [LeetCode 875 implementation](../KokoEatingBananas.java).
+
 ## 4. Find the last feasible value
 
 Some problems ask for the largest value that still satisfies a condition. Here feasibility often changes from true to false as the candidate increases:

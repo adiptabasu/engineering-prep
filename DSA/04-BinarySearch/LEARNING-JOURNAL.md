@@ -60,6 +60,12 @@ For [Sqrt(x)](https://leetcode.com/problems/sqrtx/), the learner used an inclusi
 
 **Revisit:** Explain why valid roots form a prefix of the candidate range, why a valid midpoint should be saved before searching right, and why the cast must happen before multiplication.
 
+## Learning note — 2026-11-24
+
+For [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/), the learner used an inclusive binary search over eating speeds and a helper to count the hours required. Discussion corrected the lower bound to speed `1` and changed the per-pile time from floor division to integer ceiling division; the learner reports the revised submission was accepted.
+
+**Revisit:** Explain why feasible speeds form a suffix, why the maximum pile is a feasible upper bound under `h >= piles.length`, and how remainder-based ceiling division counts a partially eaten pile.
+
 ## Problem implementation history
 
 | Study date | Problem | LeetCode | Repository solution | Result |
@@ -74,3 +80,4 @@ For [Sqrt(x)](https://leetcode.com/problems/sqrtx/), the learner used an inclusi
 | 2026-11-20 | Find Minimum in Rotated Sorted Array II | [problem](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | [FindMinimumInRotatedSortedArrayII.java](FindMinimumInRotatedSortedArrayII.java) | Learner reports accepted |
 | 2026-11-21 | Find Peak Element | [problem](https://leetcode.com/problems/find-peak-element/) | [FindPeakElement.java](FindPeakElement.java) | Learner reports accepted |
 | 2026-11-23 | Sqrt(x) | [problem](https://leetcode.com/problems/sqrtx/) | [SqrtX.java](SqrtX.java) | Learner reports accepted |
+| 2026-11-24 | Koko Eating Bananas | [problem](https://leetcode.com/problems/koko-eating-bananas/) | [KokoEatingBananas.java](KokoEatingBananas.java) | Learner reports accepted |

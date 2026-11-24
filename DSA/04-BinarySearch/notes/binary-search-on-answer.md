@@ -65,6 +65,14 @@ For `nums = [1, 2, 5, 9]` and `threshold = 6`, divisor `4` gives `1 + 1 + 2 + 3 
 
 The upper bound `max(nums)` gives a quotient of `1` for every number, so it is feasible when `threshold >= nums.length`. The feasibility scan is `O(n)`, giving total time `O(n log M)` for `M = max(nums)`. See the saved [LeetCode 1283 implementation](../SmallestDivisorGivenAThreshold.java).
 
+### Example: Minimum Days to Make m Bouquets
+
+Search days from the earliest to the latest bloom day. On a candidate day, walk through the flowers in garden order. A flower is available when `bloomDay[i] <= day`; an unavailable flower breaks the current adjacent run. A run of length `L` contributes `L / k` bouquets, and bouquets from separate runs cannot share flowers.
+
+For `bloomDay = [7, 7, 7, 7, 12, 7, 7]`, `m = 2`, and `k = 3`, day `7` gives runs of lengths `4` and `2`, so it yields `4 / 3 + 2 / 3 = 1` bouquet. Day `12` makes all seven flowers available in one run, giving `7 / 3 = 2` bouquets. Thus day `12` is feasible. Once a day is feasible, every later day is also feasible, so binary search finds the first feasible day.
+
+Check `(long) m * k` against the number of flowers before searching; this both detects impossible requests and avoids `int` overflow. The feasibility scan is `O(n)`, so total time is `O(n log D)` for `D = max(bloomDay) - min(bloomDay) + 1`. See the saved [LeetCode 1482 implementation](../MinimumNumberOfDaysToMakeMBouquets.java).
+
 ## 4. Find the last feasible value
 
 Some problems ask for the largest value that still satisfies a condition. Here feasibility often changes from true to false as the candidate increases:

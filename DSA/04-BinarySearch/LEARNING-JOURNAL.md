@@ -68,6 +68,12 @@ For [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/), t
 
 ## Learning note — 2026-11-24
 
+For [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/), the learner binary-searched days and checked feasibility by counting bouquets within consecutive runs of bloomed flowers. Discussion corrected the `m * k` overflow risk by widening before multiplication and clarified that a feasible day must be saved before searching earlier. The learner reports that the submission was accepted.
+
+**Revisit:** Explain why bouquets cannot cross an unbloomed flower, why the feasible days form a suffix, and why `(long) m * k` must widen before multiplying.
+
+## Learning note — 2026-11-24
+
 For [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/), the learner binary-searched divisors and checked feasibility by summing rounded-up quotients. Discussion corrected the lower bound to `1` and the midpoint expression to use `high - low`; the learner reports the corrected submission was accepted.
 
 **Revisit:** Explain why the divisor sum is monotone non-increasing, why each quotient must round up, and why a feasible divisor should be saved before searching left.
@@ -87,4 +93,5 @@ For [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/
 | 2026-11-21 | Find Peak Element | [problem](https://leetcode.com/problems/find-peak-element/) | [FindPeakElement.java](FindPeakElement.java) | Learner reports accepted |
 | 2026-11-23 | Sqrt(x) | [problem](https://leetcode.com/problems/sqrtx/) | [SqrtX.java](SqrtX.java) | Learner reports accepted |
 | 2026-11-24 | Koko Eating Bananas | [problem](https://leetcode.com/problems/koko-eating-bananas/) | [KokoEatingBananas.java](KokoEatingBananas.java) | Learner reports accepted |
+| 2026-11-24 | Minimum Number of Days to Make m Bouquets | [problem](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [MinimumNumberOfDaysToMakeMBouquets.java](MinimumNumberOfDaysToMakeMBouquets.java) | Learner reports accepted |
 | 2026-11-24 | Find the Smallest Divisor Given a Threshold | [problem](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [SmallestDivisorGivenAThreshold.java](SmallestDivisorGivenAThreshold.java) | Learner reports accepted |

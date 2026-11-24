@@ -185,7 +185,7 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 
 30. [**Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit**](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
-## Binary Search — 11 Problems
+## Binary Search — 12 Problems
 
 1. [**Binary Search**](https://leetcode.com/problems/binary-search/)
 
@@ -208,6 +208,8 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 10. [**Sqrt(x)**](https://leetcode.com/problems/sqrtx/)
 
 11. [**Koko Eating Bananas**](https://leetcode.com/problems/koko-eating-bananas/)
+
+12. [**Find the Smallest Divisor Given a Threshold**](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/)
 
 ## Design — LRU Cache
 

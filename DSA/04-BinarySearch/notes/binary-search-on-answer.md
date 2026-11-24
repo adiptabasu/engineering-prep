@@ -57,6 +57,14 @@ For `[3, 6, 7, 11]` at speed `4`, the piles take `1 + 2 + 2 + 3 = 8` hours. At s
 
 The largest-pile speed takes one hour per pile, so it is feasible under the problem guarantee `h >= piles.length`. The hours check is `O(n)`, giving total complexity `O(n log M)` for largest pile size `M`. See the saved [LeetCode 875 implementation](../KokoEatingBananas.java).
 
+### Example: Smallest Divisor Given a Threshold
+
+Search divisors from `1` to `max(nums)`. For each candidate divisor `d`, sum `ceil(nums[i] / d)` across the array. A larger divisor never increases any rounded-up quotient, so once the sum is within the threshold, every larger divisor is feasible too.
+
+For `nums = [1, 2, 5, 9]` and `threshold = 6`, divisor `4` gives `1 + 1 + 2 + 3 = 7`, which is too large. Divisor `5` gives `1 + 1 + 1 + 2 = 5`, which is feasible. Since `4` fails and `5` works, the smallest feasible divisor is `5`.
+
+The upper bound `max(nums)` gives a quotient of `1` for every number, so it is feasible when `threshold >= nums.length`. The feasibility scan is `O(n)`, giving total time `O(n log M)` for `M = max(nums)`. See the saved [LeetCode 1283 implementation](../SmallestDivisorGivenAThreshold.java).
+
 ## 4. Find the last feasible value
 
 Some problems ask for the largest value that still satisfies a condition. Here feasibility often changes from true to false as the candidate increases:

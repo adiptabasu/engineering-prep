@@ -9,14 +9,14 @@ Build a strong software engineering foundation through steady, durable learning.
 - Arrays & Hashing: marked complete in the repo (24 problems).
 - Linked Lists: marked complete in the repo (15 problems).
 - Stack & Queue: complete for the current problem set; 30 unique problems are recorded, plus one alternate solution and a boundary-reference file.
-- Current topic: Binary Search; exact search, lower/upper bounds, rotated-array search and minimum with distinct and duplicate values, singleton search by pair alignment, peak finding by slope, integer square root, Koko's minimum feasible speed, minimum bouquet day, minimum feasible divisor, and minimum shipping capacity are recorded.
+- Current topic: Binary Search; exact search, lower/upper bounds, rotated-array search and minimum with distinct and duplicate values, singleton search by pair alignment, peak finding by slope, integer square root, Koko's minimum feasible speed, minimum bouquet day, minimum feasible divisor, minimum shipping capacity, and kth missing positive number are recorded.
 - Stack & Queue revisit points: independently explain duplicate tie handling in boundary contributions, why monotonic deque candidates can be discarded, and the difference between fixed-size expiry and variable-window shrinking.
 - These records describe practice and learner-reported experience, not independently verified mastery.
 - Use the [central learning journal index](LEARNING-JOURNAL.md) to open the current topic's learning notes and problem history.
 
 ## Next step
 
-Continue Binary Search by re-solving the fourteen recorded problems from fresh prompts, then try GeeksforGeeks [Nth Root of M](https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1). Continue to re-solve representative Stack & Queue problems from fresh prompts when revisiting that topic.
+Continue Binary Search by re-solving the fifteen recorded problems from fresh prompts, then try GeeksforGeeks [Nth Root of M](https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1). Continue to re-solve representative Stack & Queue problems from fresh prompts when revisiting that topic.
 
 ## Later sequence
 

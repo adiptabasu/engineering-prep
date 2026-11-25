@@ -185,7 +185,7 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 
 30. [**Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit**](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)
 
-## Binary Search — 14 Problems
+## Binary Search — 15 Problems
 
 1. [**Binary Search**](https://leetcode.com/problems/binary-search/)
 
@@ -214,6 +214,8 @@ Central index of the completed DSA problems. Use this file when re-solving the s
 13. [**Find the Smallest Divisor Given a Threshold**](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/)
 
 14. [**Capacity To Ship Packages Within D Days**](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)
+
+15. [**Kth Missing Positive Number**](https://leetcode.com/problems/kth-missing-positive-number/)
 
 ## Design — LRU Cache
 

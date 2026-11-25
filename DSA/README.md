@@ -9,7 +9,7 @@ This directory contains the DSA learning progression, implementations, revision 
 | 01 — Arrays & Hashing | Complete | 24 / 24 |
 | 02 — Linked Lists | Complete | 15 / 15 |
 | 03 — Stack & Queue | Complete for current problem set | 30 problems recorded |
-| 04 — Binary Search | In progress | 14 problems recorded |
+| 04 — Binary Search | In progress | 15 problems recorded |
 | 05 — Trees | Planned | — |
 | 06 — Heap / Priority Queue | Planned | — |
 | 07 — Graphs | Planned | — |
@@ -71,7 +71,7 @@ The third section has 30 unique problem implementations recorded. It covers stac
 
 ## In progress: Binary Search
 
-The fourth section has fourteen problems recorded: exact search, lower and upper bounds, rotated-array search with distinct and duplicate values, finding the minimum with distinct and duplicate values, locating a singleton by pair alignment, finding a peak by slope, integer square root, minimum feasible eating speed, minimum bouquet day, minimum feasible divisor, and minimum shipping capacity. See [`04-BinarySearch/README.md`](04-BinarySearch/README.md) for the problem list and [`04-BinarySearch/notes/README.md`](04-BinarySearch/notes/README.md) for the concept-by-concept notes. The learner reports all fourteen submissions were accepted; continued independent practice will build on these starting points.
+The fourth section has fifteen problems recorded: exact search, lower and upper bounds, rotated-array search with distinct and duplicate values, finding the minimum with distinct and duplicate values, locating a singleton by pair alignment, finding a peak by slope, integer square root, minimum feasible eating speed, minimum bouquet day, minimum feasible divisor, minimum shipping capacity, and the kth missing positive number. See [`04-BinarySearch/README.md`](04-BinarySearch/README.md) for the problem list and [`04-BinarySearch/notes/README.md`](04-BinarySearch/notes/README.md) for the concept-by-concept notes. Learner-reported acceptance is recorded per problem in the topic journal; continued independent practice will build on these starting points.
 
 ## Git Practice
 

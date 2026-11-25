@@ -84,6 +84,12 @@ For [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capa
 
 **Revisit:** Explain why greedy packing minimizes days for a fixed capacity, why feasible capacities form a suffix, and why the sum of weights guarantees a feasible upper bound.
 
+## Learning note — 2026-11-25
+
+For [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/), the learner binary-searched the first index where `arr[i] - (i + 1)` reaches `k`. Discussion corrected the missing-count formula. The learner's submitted return expression `high + 1 + k` is equivalent to `low + k`, because an inclusive search exits with `low == high + 1`. The learner shared a LeetCode submission; acceptance status was not stated.
+
+**Revisit:** Derive the missing count from the number of positive integers through `arr[i]`, then explain why the two return expressions match at loop exit.
+
 ## Problem implementation history
 
 | Study date | Problem | LeetCode | Repository solution | Result |
@@ -102,3 +108,4 @@ For [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capa
 | 2026-11-24 | Minimum Number of Days to Make m Bouquets | [problem](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [MinimumNumberOfDaysToMakeMBouquets.java](MinimumNumberOfDaysToMakeMBouquets.java) | Learner reports accepted |
 | 2026-11-24 | Find the Smallest Divisor Given a Threshold | [problem](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [SmallestDivisorGivenAThreshold.java](SmallestDivisorGivenAThreshold.java) | Learner reports accepted |
 | 2026-11-25 | Capacity To Ship Packages Within D Days | [problem](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [CapacityToShipPackagesWithinDDays.java](CapacityToShipPackagesWithinDDays.java) | Learner reports accepted |
+| 2026-11-25 | Kth Missing Positive Number | [problem](https://leetcode.com/problems/kth-missing-positive-number/) | [KthMissingPositiveNumber.java](KthMissingPositiveNumber.java) | Submitted; acceptance not stated |

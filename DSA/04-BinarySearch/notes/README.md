@@ -14,6 +14,7 @@ Each note focuses on one Binary Search concept and builds from the fundamentals.
 8. Read [Single Element in a Sorted Array](single-element-in-sorted-array.md) for pair alignment around a singleton.
 9. Read [Rotation Count](rotation-count.md) for why the minimum's index gives the rotation count when values are distinct.
 10. Treat the [pattern map](binary-search-patterns.md) as a directory to the preview notes for answer search, peaks, matrices, and exponential search.
+11. Read [Kth Missing Positive Number](kth-missing-positive.md) for binary-searching a monotone count and translating the final crossed bounds into the answer.
 
 ## Concept notes
 
@@ -31,6 +32,7 @@ Each note focuses on one Binary Search concept and builds from the fundamentals.
 | [Peak Finding](peak-finding.md) | Follow a rising or falling slope |
 | [Matrix Search](matrix-search.md) | Choose a method based on matrix ordering |
 | [Exponential Search](exponential-search.md) | Bracket a target when the upper bound is unknown |
+| [Kth Missing Positive Number](kth-missing-positive.md) | Search a monotone missing-count function and interpret the final bounds |
 
 ## Re-solving checklist
 

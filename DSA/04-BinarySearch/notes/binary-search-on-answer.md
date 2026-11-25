@@ -24,6 +24,14 @@ For weights `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` and 5 days, the minimum capacity i
 
 To check one candidate capacity, simulate loading packages in order. If adding the next package would exceed capacity, start another day. The feasibility check is linear in the number of packages.
 
+### Example: Capacity To Ship Packages Within D Days
+
+Search the ship capacity. The heaviest package is a necessary lower bound because a package cannot be split. The sum of all weights is a sufficient upper bound because that capacity can carry every package in one day. For example, with weights `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` and five days, capacity `15` ships the packages in five consecutive groups: `[1..5]`, `[6..7]`, `[8]`, `[9]`, `[10]`. Capacity `14` needs six days, so `15` is the minimum.
+
+For one candidate capacity, greedily add each package to the current day until the next package would exceed the capacity; then start a new day with that package. No valid schedule can fit a longer initial prefix on day one than the greedy schedule; applying the same reasoning to each following day shows that greedy packing uses the fewest days. If that count is at most the allowed days, the capacity and every larger capacity are feasible.
+
+The direct bounds need one pass over the packages, then binary search costs `O(n log S)`, where `S` is the total weight. The feasibility scan can stop as soon as it uses more than the allowed days. A separate reference implementation also finds a feasible upper bound by repeatedly doubling capacity; that approach is handy when a guaranteed upper bound is not obvious. See [LeetCode 1011 implementation](../CapacityToShipPackagesWithinDDays.java).
+
 ## 3. Find the first feasible value
 
 Use this template when `feasible(x)` changes from false to true as `x` increases:

@@ -78,6 +78,12 @@ For [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/
 
 **Revisit:** Explain why the divisor sum is monotone non-increasing, why each quotient must round up, and why a feasible divisor should be saved before searching left.
 
+## Learning note — 2026-11-25
+
+For [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/), the learner binary-searched the ship capacity and greedily packed packages in their original order. Discussion corrected the feasibility comparison to compare days used with `days` and derived direct bounds: the heaviest package is the minimum possible capacity and the total weight is a guaranteed feasible capacity. The learner reports that the submission was accepted. The saved reference also keeps an expanding-upper-bound variant for comparison.
+
+**Revisit:** Explain why greedy packing minimizes days for a fixed capacity, why feasible capacities form a suffix, and why the sum of weights guarantees a feasible upper bound.
+
 ## Problem implementation history
 
 | Study date | Problem | LeetCode | Repository solution | Result |
@@ -95,3 +101,4 @@ For [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/
 | 2026-11-24 | Koko Eating Bananas | [problem](https://leetcode.com/problems/koko-eating-bananas/) | [KokoEatingBananas.java](KokoEatingBananas.java) | Learner reports accepted |
 | 2026-11-24 | Minimum Number of Days to Make m Bouquets | [problem](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | [MinimumNumberOfDaysToMakeMBouquets.java](MinimumNumberOfDaysToMakeMBouquets.java) | Learner reports accepted |
 | 2026-11-24 | Find the Smallest Divisor Given a Threshold | [problem](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [SmallestDivisorGivenAThreshold.java](SmallestDivisorGivenAThreshold.java) | Learner reports accepted |
+| 2026-11-25 | Capacity To Ship Packages Within D Days | [problem](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [CapacityToShipPackagesWithinDDays.java](CapacityToShipPackagesWithinDDays.java) | Learner reports accepted |

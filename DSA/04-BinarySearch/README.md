@@ -1,6 +1,6 @@
 # 04 — Binary Search
 
-**Status: In progress — 13 problems recorded**
+**Status: In progress — 14 problems recorded**
 
 This section starts with binary search over a sorted array. The central idea is to use order to rule out half of the remaining candidate indices after each comparison.
 
@@ -23,6 +23,7 @@ If binary search is new to you, begin with the [beginner-friendly notes](notes/R
 | 11 | Koko Eating Bananas | Find the first feasible speed using a monotone hours check | [View](./KokoEatingBananas.java) |
 | 12 | Minimum Number of Days to Make m Bouquets | Find the first feasible day while counting adjacent bloomed runs | [View](./MinimumNumberOfDaysToMakeMBouquets.java) |
 | 13 | Find the Smallest Divisor Given a Threshold | Find the first divisor whose rounded-up sum is within threshold | [View](./SmallestDivisorGivenAThreshold.java) |
+| 14 | Capacity To Ship Packages Within D Days | Find the first feasible capacity using a greedy day counter | [View](./CapacityToShipPackagesWithinDDays.java) |
 
 The reusable [lower-bound and upper-bound implementations](./BinarySearchBounds.java) are reference helpers, not additional LeetCode problems.
 

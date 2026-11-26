@@ -57,6 +57,14 @@ return answer;
 
 The saved `answer` is the best feasible value found so far. The upper bound should be known feasible; otherwise a no-solution case needs explicit handling.
 
+### Example: Allocate Minimum Pages
+
+Books must remain in their original order, and each student receives a contiguous group. Search the maximum page total allowed per student. The lower bound is the thickest book, which must fit by itself; the upper bound is the total pages, which lets one student take every book. If there are more students than books, allocation is impossible because every student must receive at least one book.
+
+For a candidate limit, greedily give each student as many consecutive books as fit, then start a new student before the next book would exceed the limit. This greedy process uses the fewest students for that limit. The candidate is feasible when it needs **at most** `k` students. If it needs fewer, split one or more contiguous groups until exactly `k` non-empty groups exist; `k <= n` guarantees enough books to do this. Requiring the greedy count to equal `k` would reject valid candidates—for example, a large page limit may let greedy fit all books in one group even though the books can still be split among several students.
+
+For `[12, 34, 67, 90]` and `k = 2`, a limit of `113` yields groups `[12, 34, 67]` and `[90]`, so it is feasible. A smaller limit that requires three students is infeasible. Since feasible limits form a suffix, save a feasible midpoint and search left for the minimum. Use `long` for the total and running page count to avoid overflow. See the [GeeksforGeeks implementation](../AllocateMinimumNumberOfPages.java).
+
 ### Example: Koko Eating Bananas
 
 Search the integer speed from `1` through the largest pile. For a candidate speed `k`, each pile needs `pile / k` full hours, plus one more hour when `pile % k != 0`. Add those hours across piles; if the total exceeds `h`, this speed is too slow.

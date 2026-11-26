@@ -96,6 +96,12 @@ For [Aggressive Cows](https://www.geeksforgeeks.org/problems/aggressive-cows/1),
 
 **Revisit:** Explain why feasible distances form a prefix, why earliest-available placement can fit at least as many cows as any other placement for a fixed distance, and why the search upper bound is `last stall - first stall`.
 
+## Learning note — 2026-11-27
+
+For [Allocate Minimum Pages](https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1), the learner binary-searched the maximum allowed pages and greedily counted contiguous student groups. Discussion corrected the search direction for finding a minimum, changed feasibility from exactly `k` groups to at most `k`, and widened page totals and bounds to `long`. The learner asked for detailed comments explaining why fewer than `k` greedy groups can be split into exactly `k` non-empty contiguous allocations. Submission status was not stated.
+
+**Revisit:** Explain why the greedy check computes the fewest groups under a page limit, why `studentsNeeded <= k` is the correct feasibility test, and why a feasible limit should be saved before searching left.
+
 ## Problem implementation history
 
 | Study date | Problem | Problem link | Repository solution | Result |
@@ -116,3 +122,4 @@ For [Aggressive Cows](https://www.geeksforgeeks.org/problems/aggressive-cows/1),
 | 2026-11-25 | Capacity To Ship Packages Within D Days | [problem](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [CapacityToShipPackagesWithinDDays.java](CapacityToShipPackagesWithinDDays.java) | Learner reports accepted |
 | 2026-11-25 | Kth Missing Positive Number | [problem](https://leetcode.com/problems/kth-missing-positive-number/) | [KthMissingPositiveNumber.java](KthMissingPositiveNumber.java) | Submitted; acceptance not stated |
 | 2026-11-26 | Aggressive Cows | [GeeksforGeeks](https://www.geeksforgeeks.org/problems/aggressive-cows/1) | [AggressiveCows.java](AggressiveCows.java) | Learner reports accepted |
+| 2026-11-27 | Allocate Minimum Pages | [GeeksforGeeks](https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1) | [AllocateMinimumNumberOfPages.java](AllocateMinimumNumberOfPages.java) | Submission status not stated |

@@ -1,6 +1,6 @@
 # 04 — Binary Search
 
-**Status: In progress — 16 problems recorded**
+**Status: In progress — 17 problems recorded**
 
 This section starts with binary search over a sorted array. The central idea is to use order to rule out half of the remaining candidate indices after each comparison.
 
@@ -26,6 +26,7 @@ If binary search is new to you, begin with the [beginner-friendly notes](notes/R
 | 14 | Capacity To Ship Packages Within D Days | Find the first feasible capacity using a greedy day counter | [View](./CapacityToShipPackagesWithinDDays.java) |
 | 15 | Kth Missing Positive Number | Find the first index where the missing count reaches `k` | [View](./KthMissingPositiveNumber.java) |
 | 16 | Aggressive Cows (GeeksforGeeks) | Find the largest feasible minimum distance using greedy placement | [View](./AggressiveCows.java) |
+| 17 | Allocate Minimum Pages (GeeksforGeeks) | Find the smallest feasible page limit using contiguous greedy allocation | [View](./AllocateMinimumNumberOfPages.java) |
 
 The reusable [lower-bound and upper-bound implementations](./BinarySearchBounds.java) are reference helpers, not additional LeetCode problems.
 

@@ -90,9 +90,15 @@ For [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-posi
 
 **Revisit:** Derive the missing count from the number of positive integers through `arr[i]`, then explain why the two return expressions match at loop exit.
 
+## Learning note — 2026-11-26
+
+For [Aggressive Cows](https://www.geeksforgeeks.org/problems/aggressive-cows/1), the learner sorted the stalls, binary-searched a candidate minimum gap, and greedily placed each next cow at the earliest stall far enough from the previous cow. Discussion corrected the upper bound from an array-index distance to the physical stall span and the return value to the largest feasible gap. The learner reports that the submission was accepted.
+
+**Revisit:** Explain why feasible distances form a prefix, why earliest-available placement can fit at least as many cows as any other placement for a fixed distance, and why the search upper bound is `last stall - first stall`.
+
 ## Problem implementation history
 
-| Study date | Problem | LeetCode | Repository solution | Result |
+| Study date | Problem | Problem link | Repository solution | Result |
 |---|---|---|---|---|
 | 2026-11-17 | Binary Search | [problem](https://leetcode.com/problems/binary-search/) | [BinarySearch.java](BinarySearch.java) | Learner reports accepted |
 | 2026-11-17 | Search Insert Position | [problem](https://leetcode.com/problems/search-insert-position/) | [SearchInsertPosition.java](SearchInsertPosition.java) | Learner reports accepted |
@@ -109,3 +115,4 @@ For [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-posi
 | 2026-11-24 | Find the Smallest Divisor Given a Threshold | [problem](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | [SmallestDivisorGivenAThreshold.java](SmallestDivisorGivenAThreshold.java) | Learner reports accepted |
 | 2026-11-25 | Capacity To Ship Packages Within D Days | [problem](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [CapacityToShipPackagesWithinDDays.java](CapacityToShipPackagesWithinDDays.java) | Learner reports accepted |
 | 2026-11-25 | Kth Missing Positive Number | [problem](https://leetcode.com/problems/kth-missing-positive-number/) | [KthMissingPositiveNumber.java](KthMissingPositiveNumber.java) | Submitted; acceptance not stated |
+| 2026-11-26 | Aggressive Cows | [GeeksforGeeks](https://www.geeksforgeeks.org/problems/aggressive-cows/1) | [AggressiveCows.java](AggressiveCows.java) | Learner reports accepted |

@@ -92,6 +92,12 @@ works  works  works  |  too large  too large
 
 When `mid` works, save it and search right for a larger feasible value. When it fails, search left:
 
+### Example: Aggressive Cows
+
+This problem asks for the largest minimum distance that still allows all cows to be placed. After sorting stall positions, test one proposed distance by putting the first cow in the first stall, then greedily putting each next cow in the earliest stall at least that far from the previous cow. If all cows fit, that distance is feasible and every smaller distance is feasible too. If they do not fit, larger distances cannot work.
+
+This is a last-feasible binary search: save the distance when placement succeeds and continue to the right; on failure, move left. Search from `1` to `arr[n - 1] - arr[0]`, the full span of the sorted stalls. For `[1, 2, 4, 8, 9]` and three cows, distance `3` works by choosing stalls at `1`, `4`, and `8`; distance `4` does not fit three cows, so the maximum feasible gap is `3`. See the [GeeksforGeeks implementation](../AggressiveCows.java).
+
 ```java
 long low = smallestPossibleAnswer;
 long high = largestPossibleAnswer;

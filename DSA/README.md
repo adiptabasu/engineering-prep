@@ -37,41 +37,16 @@ During first attempts, the pattern is not revealed unless needed. The goal is to
 - State / invariants
 - Data-structure behavior
 
-## Completed: Arrays & Hashing
+## Topic Guides & Notes
 
-The first section currently contains **24 implemented LeetCode problems**.
+- [01 — Arrays & Hashing](01-Arrays/README.md) ([notes](01-Arrays/notes/README.md), [journal](01-Arrays/LEARNING-JOURNAL.md))
+- [02 — Linked Lists](02-LinkedLists/README.md) ([notes](02-LinkedLists/notes/README.md), [journal](02-LinkedLists/LEARNING-JOURNAL.md))
+- [03 — Stack & Queue](03-StackQueue/README.md) ([notes](03-StackQueue/notes/README.md), [journal](03-StackQueue/LEARNING-JOURNAL.md))
+- [04 — Binary Search](04-BinarySearch/README.md) ([notes](04-BinarySearch/notes/README.md), [journal](04-BinarySearch/LEARNING-JOURNAL.md))
+- [Design (`DSN-Design/`)](DSN-Design/LEARNING-JOURNAL.md)
+- [Central LeetCode Problem Index](LeetCode.md)
 
-The problems cover:
-
-- Hashing and lookup
-- Frequency counting
-- Sets
-- Sorting + Two Pointers
-- Fixed Sliding Window
-- Variable Sliding Window
-- Prefix Sum
-- Prefix Remainders
-- Prefix/Suffix techniques
-- Running-state algorithms
-- Dynamic Programming
-
-See [`01-Arrays/README.md`](01-Arrays/README.md) for the at-a-glance revision sheet.
-
-See [`LeetCode.md`](LeetCode.md) for all canonical LeetCode links in one place.
-
-## Completed: Linked Lists
-
-The second section contains **15 implemented LeetCode problems**. It develops pointer reasoning through traversal, reversal, fast and slow pointers, dummy nodes, cycle detection, intersection, deep copy, and list rearrangement.
-
-See [`02-LinkedLists/README.md`](02-LinkedLists/README.md) for the problem list and revision notes. The LRU Cache is maintained separately under [`DSN-Design/`](DSN-Design/) because it combines a hash map with a doubly linked list as a design problem.
-
-## Completed for the current problem set: Stack & Queue
-
-The third section has 30 unique problem implementations recorded. It covers stack and queue operations, design with stacks/queues, parsing and simulation, monotonic stacks and boundary contributions, and monotonic deques for fixed and variable sliding windows. See [`03-StackQueue/README.md`](03-StackQueue/README.md) for the problem list and [`03-StackQueue/notes/README.md`](03-StackQueue/notes/README.md) for the pattern notes. A recorded solution set describes practice coverage, not independently verified mastery.
-
-## In progress: Binary Search
-
-The fourth section has seventeen problems recorded: exact search, lower and upper bounds, rotated-array search with distinct and duplicate values, finding the minimum with distinct and duplicate values, locating a singleton by pair alignment, finding a peak by slope, integer square root, minimum feasible eating speed, minimum bouquet day, minimum feasible divisor, minimum shipping capacity, the kth missing positive number, Aggressive Cows, and Allocate Minimum Pages. See [`04-BinarySearch/README.md`](04-BinarySearch/README.md) for the problem list and [`04-BinarySearch/notes/README.md`](04-BinarySearch/notes/README.md) for the concept-by-concept notes. Learner-reported acceptance is recorded per problem in the topic journal; continued independent practice will build on these starting points.
+Detailed problem histories and live progress live in each topic's `LEARNING-JOURNAL.md` and [`../LEARNING-HOME.md`](../LEARNING-HOME.md) rather than being duplicated here.
 
 ## Git Practice
 

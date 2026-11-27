@@ -1,14 +1,14 @@
 # Learning guidance
 
 - This is a personal engineering learning repository. Preserve its topic-based structure; discuss structural changes before making them.
-- Before a learning session, read `LEARNING-HOME.md`, use `LEARNING-JOURNAL.md` to locate the current topic journal, and read the current topic README, if present. Do not load other topic journals unless needed.
+- **Keep startup context lean:** Before a session, read only `LEARNING-HOME.md` and the **top ~30–40 lines** of the active topic journal (newest-first). Skip `LEARNING-JOURNAL.md` (index), `<topic>/README.md`, and other topic journals unless switching topics or looking up a specific problem list.
 - Follow the learner's topic-by-topic pace. Encourage an independent attempt before revealing a solution, then help explain the reasoning, invariant, and complexity.
-- Treat solution files and commits as evidence of practice, not proof of mastery. Use independent recall, explanation, and variations to check retention.
-- Keep continuity notes concise and factual. Do not claim progress that the learner has not demonstrated, and review proposed progress updates with the learner before saving them.
-- Do not create additional journals or trackers unless the learner asks for them.
+- Keep Java solution files detailed and self-contained (problem link, summary, approach, invariant, complexity, edge cases, and non-obvious comments) for quick future reference.
+- Treat solution files and commits as evidence of practice, not proof of mastery. Keep learner reports (e.g., accepted submissions) distinct from demonstrated understanding.
+- **Avoid double output & multi-file churn:** Write approved/requested solution and journal updates directly to disk and share a ≤5-line summary for diff review rather than printing full files in chat first. Do not create additional journals, trackers, or single-problem `notes/*.md` files unless requested.
 
 ## LeetCode problem workflow
 
-- The learner chooses a LeetCode problem and attempts it before asking for help. When asked, guide with questions, hints, and explanations; do not reveal a full solution prematurely.
-- Follow [`SOLUTION-WORKFLOW.md`](SOLUTION-WORKFLOW.md) for solution format, learner approval, journal entries, commit messages, and publishing.
-- An approval of the prepared solution and journal entry authorizes only the documented solution workflow. Inspect the branch and push destination first; if either is unclear, ask before publishing. Do not include unrelated files.
+- Let the learner choose a problem and attempt it first. Guide with questions, hints, and explanations without revealing a full solution prematurely.
+- Follow [`SOLUTION-WORKFLOW.md`](SOLUTION-WORKFLOW.md) for solution detail, journal updates, and Git commands.
+- Never initialize Git, commit, or push without separate authorization; by default, output ready-to-run `git add`, `git commit`, and `git push` commands so the learner can run them directly.

@@ -228,60 +228,7 @@ Additional technologies will be added as they become relevant to the learning pr
 
 ## 📈 Progress
 
-Progress is tracked by topic rather than by simply counting problems. Which helps make the concepts conctrete.
-
-### Data Structures & Algorithms
-
-- 🟢 Complexity Analysis
-- 🟢 Arrays & Hashing — Complete
-- 🟢 Linked Lists — Complete
-- 🟢 Stack & Queue — Complete for current problem set
-- 🟡 Binary Search — In progress
-- ⚪ Recursion & Backtracking
-- ⚪ Trees & BST
-- ⚪ Heaps
-- ⚪ Graphs
-- ⚪ Greedy Algorithms
-- ⚪ Dynamic Programming
-- ⚪ Tries
-- ⚪ Bit Manipulation
-- ⚪ Advanced Topics
-
-### Arrays & Hashing
-
-**24 problems implemented and pushed.**
-
-The section currently covers:
-
-- HashMap / HashSet
-- Frequency counting
-- Two Pointers
-- Sliding Window
-- Prefix Sum
-- Prefix Remainders
-- Prefix / Suffix techniques
-- Heap / Priority Queue
-- Kadane's Algorithm
-- Dynamic Programming
-- Stack-based reasoning
-
-The problems are documented individually in the Java source files and summarized in the [Arrays & Hashing revision guide](DSA/01-Arrays/README.md).
-
-### Linked Lists
-
-**15 problems implemented and pushed.** The section covers traversal, reversal, fast and slow pointers, dummy nodes, cycle detection, intersection, deep copying, list rearrangement, and grouped operations. The [Linked Lists revision guide](DSA/02-LinkedLists/README.md) records the problem set and the key reasoning points to revisit.
-
-The LRU Cache implementation is in [`DSA/DSN-Design/LRUCache.java`](DSA/DSN-Design/LRUCache.java) and is indexed as a design problem in [`DSA/LeetCode.md`](DSA/LeetCode.md).
-
-### Stack & Queue
-
-**30 unique problems recorded and pushed.** The section covers stack/queue design, parsing and simulation, monotonic stacks, subarray boundaries and contributions, and monotonic deques for sliding windows. See the [Stack & Queue revision guide](DSA/03-StackQueue/README.md) and its [pattern notes](DSA/03-StackQueue/notes/README.md). The problem set records practice; it does not by itself establish independent mastery.
-
-### Binary Search
-
-The fourth section has started with exact search, lower and upper bounds, rotated-array search and minimum with distinct and duplicate values, singleton search by pair alignment, peak finding by slope, integer square root, minimum feasible eating speed, minimum bouquet day, minimum feasible divisor, minimum shipping capacity, finding the kth missing positive number, Aggressive Cows, and Allocate Minimum Pages. See the [Binary Search revision guide](DSA/04-BinarySearch/README.md) and its [beginner-friendly notes](DSA/04-BinarySearch/notes/README.md). The recorded solutions describe practice and learner-reported acceptance; they do not by themselves establish independent mastery.
-
-The progress indicators represent the current state of the learning journey and may change as topics are revisited at greater depth.
+Progress and next steps are tracked in [`LEARNING-HOME.md`](LEARNING-HOME.md) and each topic's `LEARNING-JOURNAL.md` (not duplicated here). See [`DSA/README.md`](DSA/README.md) for the DSA topic roadmap, topic revision guides (`DSA/<topic>/README.md`), and [`DSA/LeetCode.md`](DSA/LeetCode.md) for the problem links.
 
 ---
 

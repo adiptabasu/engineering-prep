@@ -12,7 +12,8 @@ Build a strong software engineering foundation through steady, durable learning.
 - Current topic: Binary Search; exact search, lower/upper bounds, rotated-array search and minimum with distinct and duplicate values, singleton search by pair alignment, peak finding by slope, integer square root, Koko's minimum feasible speed, minimum bouquet day, minimum feasible divisor, minimum shipping capacity, kth missing positive number, Aggressive Cows, and Allocate Minimum Pages are recorded.
 - Stack & Queue revisit points: independently explain duplicate tie handling in boundary contributions, why monotonic deque candidates can be discarded, and the difference between fixed-size expiry and variable-window shrinking.
 - These records describe practice and learner-reported experience, not independently verified mastery.
-- Use the [central learning journal index](LEARNING-JOURNAL.md) to open the current topic's learning notes and problem history.
+- Active topic journal (read top ~30–40 lines only): [DSA/04-BinarySearch/LEARNING-JOURNAL.md](DSA/04-BinarySearch/LEARNING-JOURNAL.md)
+- Central journal index (use only when switching topics): [LEARNING-JOURNAL.md](LEARNING-JOURNAL.md)
 
 ## Next step
 
